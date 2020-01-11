@@ -6,3 +6,4 @@ Codebase for my personal website.
 Code - HTML/CSS  
 Hosting - AWS S3  
 CMS - None atm  
+Deploy - Using Github Actions
