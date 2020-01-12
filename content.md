@@ -27,7 +27,7 @@ One of my favorite "hats" I get to wear is one of a Product Marketer helping bra
 
 
 ### Conference Organizer
-I was very lucky to work early in my career on some amazing events as a Conference Organizer. I worked on all things community and events for a few years of <a target="_blank" href="https://www.feastongood.com">The Feast</a> events and also helped execute Skillshare's first conference. Following my expereiences in consumer goods, I founded a conference and build a community around consumer product makers called <a target="_blank" href="http://nearlyimpossible.org">Nearly Impossible</a> which meant organizing 3 large conferences and numerous smaller events. My partner and I are actually working on something brand new for Nearly Impossible this year! Stay tuned!
+I was very lucky to work early in my career on some amazing events as a Conference Organizer. I worked on all things community and events for a few years of <a target="_blank" href="https://www.feastongood.com">The Feast</a> and also helped execute Skillshare's first conference. After diving into the world of consumer goods and ecommerce, I founded a new conference and build a community around brand-forward product makers called <a target="_blank" href="http://nearlyimpossible.org">Nearly Impossible</a>. This meant managing the sales, marketing, venues, vendors, speakers, sponsors, volunteers, and partners for 3 large conferences in NYC and SF. My partner and I are actually working on something brand new for Nearly Impossible this year! Stay tuned!
 
 
 ## Want to Work Together?
