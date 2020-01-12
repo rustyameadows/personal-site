@@ -15,7 +15,7 @@ The “hat” that I most often wear is that of Ecommerce Strategist. In this ar
 In addition to working with brands on ecommerce strategy, I am also a Front-End Web Developer that specializes in building ecommerce site and expereiences. I work on development projects of all scale, everything from full, turn-key ecommerce sites to tweaking existing Shopify/Wordpress themes. I’m a big believer in technical solutions that reduce complexity and bring joy to both the customer and the operator. I have a sweet spot for HTML/CSS, Ruby, and Shopify’s Liquid but have used various stacks throughout the years and am always playing with new tools! Recently I have been updating a fully-custom wedding planning app that I built for the lovely folks at <a target="_blank" href="https://downeystreetevents.com">Downey Street Events</a>.
 
 ### Manufacturing/Sourcing Consultant
-I just so happen to also be that person who folks turn to when they need help sourcing products, packaging, marketing materials, brand merchandise, and more! I was lucky enough to serve as <a target="_blank" href="https://www.lumi.com">Lumi</a>'s first Head of Product where I developed and implemented product sourcing, merchandising, and logistics for hundreds of customized packaging products. I also developed and sourced all of the packaging during my years at <a target="_blank" href="https://tattly.com">Tattly</a> which included our tattoo products, product packaging, marketing/shipping materials, all on a shoe-string boot-strapped budget. Most recently, during my time at <a target="_blank" href="https://rwguild.com">The Guild</a>, I oversaw the planning, budgeting, design, and sourcing of our massive suite of branded packaging materials used in our SOHO retail store, restuarant, and online store.
+I just so happen to also be that person who folks turn to when they need help sourcing products, packaging, marketing materials, brand merchandise, and more! I was lucky enough to serve as <a target="_blank" href="https://www.lumi.com">Lumi</a>'s first Head of Product where I developed and implemented product sourcing, merchandising, and logistics for hundreds of customized packaging products. I also developed and sourced all of the packaging during my years at <a target="_blank" href="https://tattly.com">Tattly</a> which included our tattoo products, product packaging, marketing/shipping materials - all on a shoe-string boot-strapped budget. Most recently, during my time at <a target="_blank" href="https://rwguild.com">The Guild</a>, I oversaw the planning, budgeting, design, and sourcing of our massive suite of branded packaging materials used in our SOHO retail store, restuarant, and online store.
 
 ### Product Marketer
 One of my favorite "hats" I get to wear is one of a Product Marketer helping brands best communicate with thier customers and customers-to-be.
@@ -27,8 +27,7 @@ One of my favorite "hats" I get to wear is one of a Product Marketer helping bra
 
 
 ### Conference Organizer
-
-
+I was very lucky to work early in my career on some amazing events as a Conference Organizer. I worked on all things community and events for a few years of <a target="_blank" href="https://www.feastongood.com">The Feast</a> events and also helped execute Skillshare's first conference. Following my expereiences in consumer goods, I founded a conference and build a community around consumer product makers called <a target="_blank" href="http://nearlyimpossible.org">Nearly Impossible</a> which meant organizing 3 large conferences and numerous smaller events. My partner and I are actually working on something brand new for Nearly Impossible this year! Stay tuned!
 
 
 ## Want to Work Together?
