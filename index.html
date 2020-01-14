@@ -18,7 +18,11 @@
     <title>Rusty Meadows</title>
     <meta name="description" content="Personal site for Rusty Meadows">
 
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700&display=swap" rel="stylesheet">
+
     <style>
+
+    /* RESET */
     html, body, div, span, applet, object, iframe, blockquote, pre,
     a, abbr, acronym, address, big, cite, code,
     del, dfn, em, img, ins, kbd, q, s, samp,
@@ -62,16 +66,70 @@
     border-collapse: collapse;
     border-spacing: 0;
     }
+    a {
+      text-decoration: underline;
+      color: #000;
+    }
 
+    /* STYLE */
     body {
       margin-bottom: 120px;
+      font-family: 'Lato', helvetica, "Apple Color Emoji", arial, sans-serif;
     }
+
+    header {
+      text-align: center;
+    }
+
+    header div {
+      padding: 80px 0;
+    }
+
+    main .content {
+      width: 100%;
+      max-width: 1100px;
+      margin: 0 auto;
+    }
+
+    main .feature {
+      background-color: #FFE000;
+      padding: 80px 0;
+    }
+
+    .feature h2 {
+      font-size: 20px;
+      font-weight: normal;
+      line-height: 36px;
+      text-align: center;
+    }
+
+    main .role {
+      margin-top: 60px;
+      margin-bottom: 60px;
+    }
+
+
+    main .contact {
+      background-color: #FFE000;
+      padding: 80px 0;
+    }
+
+    .contact h2 {
+      font-size: 22px;
+      font-weight: normal;
+      text-align: center;
+    }
+
+
+
+
+
     </style>
 
   </head>
   <body>
     <header>
-      <h3 style="background-color: #FFE000; margin: 0; padding: 15px; font-size: 13px; text-align: center;">
+      <h3 style="background-color: #91d3e9; margin: 0; padding: 15px; font-size: 13px; text-align: center;">
         Hello! This site is currently under construction. I'm in the process of desinging and developing a new site in public so you can watch along! Enjoy!
       </h3>
       <div>
@@ -80,41 +138,54 @@
       </div>
     </header>
     <main>
-      <section>
-        <h2>I am a <a target="_blank" href="https://fs.blog/2017/11/generalized-specialist/">“Generalized Specialist”</a> with a deep skillset in ecommerce strategy + development who also has a range of experience across marketing, product development, sourcing, and operations. I work with brands in various strategic and impactful roles to help build exceptional customer expereiences that operate efficiently.</h2>
+      <section class="feature">
+        <div class="content">
+          <h2>I am a <a target="_blank" href="https://fs.blog/2017/11/generalized-specialist/">Generalized Specialist</a> with a deep skillset in digital strategy + development who also has a range of experience across marketing, product development, sourcing, and operations. I work with brands in various strategic and impactful roles to help build exceptional customer expereiences + products that operate efficiently.</h2>
+        </div>
       </section>
       <section>
-        <h3>Ecommerce Strategist</h3>
-        <p>
-          The “hat” that I most often wear is that of Ecommerce Strategist. In this area I have over 10 years of experience with an amazing group of clients. I work with teams big and small to help concept, shape, and implement amazing customer expereiences. Over the past 3 years, I’ve helped both as a consultant as well as in-house and am comfortable in both scenarios. Most recently, I’ve been working with the team at <a target="_blank" href="https://sugarpaper.com">Sugar Paper</a> to help shape thier ecommerce analytics and development roadmap.
-        </p>
+        <div class="content role">
+          <h3>Ecommerce Strategist</h3>
+          <p>
+            The “hat” that I most often wear is that of Ecommerce Strategist. In this area I have over 10 years of experience with an amazing group of clients. I work with teams big and small to help concept, shape, and implement amazing customer expereiences. Over the past 3 years, I’ve helped both as a consultant as well as in-house and am comfortable in both scenarios. Most recently, I’ve been working with the team at <a target="_blank" href="https://sugarpaper.com">Sugar Paper</a> to help shape thier ecommerce analytics and development roadmap.
+          </p>
+        </div>
       </section>
       <section>
-        <h3>Front-End Web Developer</h3>
-        <p>
-          In addition to working with brands on ecommerce strategy, I am also a Front-End Web Developer that specializes in building ecommerce site and expereiences. I work on development projects of all scale, everything from full, turn-key ecommerce sites to tweaking existing Shopify/Wordpress themes. I’m a big believer in technical solutions that reduce complexity and bring joy to both the customer and the operator. I have a sweet spot for HTML/CSS, Ruby, and Shopify’s Liquid but have used various stacks throughout the years and am always playing with new tools! Recently I have been updating a fully-custom wedding planning app that I built for the lovely folks at <a target="_blank" href="https://downeystreetevents.com">Downey Street Events</a>.
-        </p>
+        <div class="content role">
+          <h3>Front-End Web Developer</h3>
+          <p>
+            In addition to working with brands on ecommerce strategy, I am also a Front-End Web Developer that specializes in building ecommerce site and expereiences. I work on development projects of all scale, everything from full, turn-key ecommerce sites to tweaking existing Shopify/Wordpress themes. I’m a big believer in technical solutions that reduce complexity and bring joy to both the customer and the operator. I have a sweet spot for HTML/CSS, Ruby, and Shopify’s Liquid but have used various stacks throughout the years and am always playing with new tools! Recently I have been updating a fully-custom wedding planning app that I built for the lovely folks at <a target="_blank" href="https://downeystreetevents.com">Downey Street Events</a>.
+          </p>
+        </div>
       </section>
       <section>
-        <h3>Manufacturing/Sourcing Consultant</h3>
-        <p>
-          I just so happen to also be that person who folks turn to when they need help sourcing products, packaging, marketing materials, brand merchandise, and more! I was lucky enough to serve as <a target="_blank" href="https://www.lumi.com">Lumi</a>'s first Head of Product where I developed and implemented product sourcing, merchandising, and logistics for hundreds of customized packaging products. I also developed and sourced all of the packaging during my years at <a target="_blank" href="https://tattly.com">Tattly</a> which included our tattoo products, product packaging, marketing/shipping materials - all on a shoe-string boot-strapped budget. Most recently, during my time at <a target="_blank" href="https://rwguild.com">The Guild</a>, I oversaw the planning, budgeting, design, and sourcing of our robust <a target="_blank" href="https://laurenoneilldesign.com/portfolio/roman-williams-guild">suite of branded packaging materials<a/> used in our SOHO retail store, restuarant, and online store.
-        </p>
+        <div class="content role">
+          <h3>Manufacturing/Sourcing Consultant</h3>
+          <p>
+            I just so happen to also be that person who folks turn to when they need help sourcing products, packaging, marketing materials, brand merchandise, and more! I was lucky enough to serve as <a target="_blank" href="https://www.lumi.com">Lumi</a>'s first Head of Product where I developed and implemented product sourcing, merchandising, and logistics for hundreds of customized packaging products. I also developed and sourced all of the packaging during my years at <a target="_blank" href="https://tattly.com">Tattly</a> which included our tattoo products, product packaging, marketing/shipping materials - all on a shoe-string boot-strapped budget. Most recently, during my time at <a target="_blank" href="https://rwguild.com">The Guild</a>, I oversaw the planning, budgeting, design, and sourcing of our robust <a target="_blank" href="https://laurenoneilldesign.com/portfolio/roman-williams-guild">suite of branded packaging materials</a> used in our SOHO retail store, restuarant, and online store.
+          </p>
+        </div>
       </section>
       <section>
-        <h3>Conference Organizer</h3>
-        <p>
-          I was very lucky to work early in my career on some amazing events as a Conference Organizer. I worked on all things community and events for a few years of <a target="_blank" href="https://www.feastongood.com">The Feast</a> and also helped execute Skillshare's first conference. After diving into the world of consumer goods and ecommerce, I founded a new conference and build a community around brand-forward product makers called <a target="_blank" href="http://nearlyimpossible.org">Nearly Impossible</a>. This meant managing the sales, marketing, venues, vendors, speakers, sponsors, volunteers, and partners for 3 large conferences in NYC and SF. My partner and I are actually working on something brand new for Nearly Impossible this year! Stay tuned!
-        </p>
+        <div class="content role">
+          <h3>Conference Organizer</h3>
+          <p>
+            I was very lucky to work early in my career on some amazing events as a Conference Organizer. I worked on all things community and events for a few years of
+            <a target="_blank" href="https://www.feastongood.com">The Feast</a> and also helped execute Skillshare's first conference. After diving into the world of consumer goods and ecommerce, I founded a new conference and build a community around brand-forward product makers called <a target="_blank" href="http://nearlyimpossible.org">Nearly Impossible</a>. This meant managing the sales, marketing, venues, vendors, speakers, sponsors, volunteers, and partners for 3 large conferences in NYC and SF. My partner and I are actually working on something brand new for Nearly Impossible this year! Stay tuned!
+          </p>
+        </div>
       </section>
-      <section>
-        <h2>Want to Work Together?</h2>
-        <p>
-          If your brand needs help with any of the above, I’d love to chat more about how I can help.
-          I am curently accepting new freelance projects + full-time opportunities.
-          The best way to reach me is via email, I aim to reply very quickly!
-        </p>
-        <a href="mailto:hellorustymeadows@gmail.com">Email Me</a>
+      <section class="contact">
+        <div class="content">
+          <h2>Want to Work Together?</h2>
+          <p>
+            If your brand needs help with any of the above, I’d love to chat more about how I can help.
+            I am curently accepting new freelance projects + full-time opportunities.
+            The best way to reach me is via email, I aim to reply very quickly!
+          </p>
+          <a href="mailto:hellorustymeadows@gmail.com">Email Me</a>
+        </div>
       </section>
     </main>
     <footer>
