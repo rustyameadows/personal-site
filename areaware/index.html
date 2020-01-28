@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+  <title>AREAWARE</title>
+
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- External CSS -->
+  <link rel="stylesheet" href="base.css">
+  <!-- // <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script> -->
+  <script src="jquery.min.js"></script>
+  <script src="flexslider.min.js"></script>
+  <link href="webfonts/ss-gizmo.css" rel="stylesheet">
+  <script type="text/javascript" charset="utf-8">
+    $(window).load(function() {
+      $('.smaller-slider-2').flexslider({
+        animation: 'fade',
+        slideshowSpeed: 8000,
+        touch: true,
+        controlNav: false,
+        directionNav: false
+      });
+      $('.smaller-slider-1').flexslider({
+        animation: 'fade',
+        slideshowSpeed: 8000,
+        touch: true,
+        controlNav: false,
+        directionNav: false,
+        sync: ".smaller-slider-2"
+      });
+      $('.main-slider').flexslider({
+        controlsContainer: ".main-slider-controls",
+        animation: 'slide',
+        slideshowSpeed: 8000,
+        touch: true,
+        controlNav: false,
+        sync: ".smaller-slider-1"
+      });
+    });
+  </script>
+</head>
+
+<body>
+  <nav>
+    <div class="nav-hold">
+      <i class="mobile-menu"><a href="#" id="nav-toggle">rows</a></i>
+      <ul class="left hidden">
+        <li><a href="/">Products</a>
+          <ul class="sub-nav">
+            <li><a href="#">Top 10</a></li>
+            <li><a href="#">New</a></li>
+            <li><a href="#">Kids</a></li>
+            <li><a href="#">Cubebot</a></li>
+            <li><a href="#">Desk & Office</a></li>
+            <li><a href="#">Home Accessories</a></li>
+            <li><a href="#">Electronics/Lighting</a></li>
+            <li><a href="#">Kitchen & Tabletop</a></li>
+            <li><a href="#">All Products</a></li>
+          </ul>
+        </li>
+        <li><a href="/">Designers</a>
+          <ul class="sub-nav">
+            <li><a href="#">Harry Allen</a></li>
+            <li><a href="#">Baniel Ballou</a></li>
+            <li><a href="#">Bower</a></li>
+            <li><a href="#">Donald Corey</a></li>
+            <li><a href="#">Jonas Damon</a></li>
+            <li><a href="#">Joe Doucet</a></li>
+            <li><a href="#">Fort Standard</a></li>
+            <li><a href="#">Cas Holman</a></li>
+            <li><a href="#">Eric Janssen</a></li>
+            <li><a href="#">Harry Allen</a></li>
+            <li><a href="#">Baniel Ballou</a></li>
+            <li><a href="#">Bower</a></li>
+            <li><a href="#">Donald Corey</a></li>
+            <li><a href="#">Jonas Damon</a></li>
+            <li><a href="#">Joe Doucet</a></li>
+            <li><a href="#">Fort Standard</a></li>
+            <li><a href="#">Cas Holman</a></li>
+            <li><a href="#">Eric Janssen</a></li>
+            <li><a href="#">Harry Allen</a></li>
+            <li><a href="#">Baniel Ballou</a></li>
+            <li><a href="#">Bower</a></li>
+            <li><a href="#">Donald Corey</a></li>
+            <li><a href="#">Jonas Damon</a></li>
+            <li><a href="#">Joe Doucet</a></li>
+            <li><a href="#">Fort Standard</a></li>
+            <li><a href="#">Cas Holman</a></li>
+            <li><a href="#">Eric Janssen</a></li>
+            <li><a href="#">Joe Doucet</a></li>
+            <li><a href="#">Fort Standard</a></li>
+            <li><a href="#">Cas Holman</a></li>
+            <li><a href="#">Eric Janssen</a></li>
+          </ul>
+        </li>
+        <li><a href="/">About</a></li>
+        <li class="mobile-search"><a href="/">Search</a></li>
+      </ul>
+      <div class="logo">
+        <a href="/"><img src="logo.png"></a>
+      </div>
+      <ul class="right">
+        <li class="icon"><a href="#" id="search-toggle">Search</a></li>
+        <li class="icon mobile-cart"><a href="/">Cart</a></li>
+      </ul>
+    </div>
+  </nav>
+  <div class="grid-hold search-hold hidden">
+    <div class="group grid1of1">
+      <form action="http://Areaware.com/search" id="search-field" class="">
+        <div id="inner-form">
+          <input type="text" id="q" name="q" title="search" autocomplete="off" placeholder="Cubebot..."></input>
+          <input type="submit" value="right">
+          <label>Search products, designers, or categories</label>
+        </div>
+      </form>
+    </div>
+  </div>
+  <section class="grid-hold home carousel">
+    <div class="group grid3of4 product main-slider full">
+      <div class="main-slider-controls">
+      </div>
+      <ul class="slides grid grid1of1">
+          <li class="slide">
+            <a href="/home.html">
+              <img src="banner_cropped_1.jpg">
+              <div class="banner-caption">
+                <h2>Building Blocks</h2>
+                <h3>$55</h3>
+              </div>
+            </a>
+          </li>
+          <li class="slide">
+            <a href="/">
+              <img src="banner_cropped_4.jpg">
+              <div class="banner-caption">
+                <h2>Star Spangled Spatula</h2>
+                <h3>$45</h3>
+              </div>
+            </a>
+          </li>
+          <li class="slide">
+            <a href="/">
+              <img src="banner_cropped_2.jpg">
+              <div class="banner-caption">
+                <h2>Wooden Bottle Opener</h2>
+                <h3>$10</h3>
+              </div>
+            </a>
+          </li>
+      </ul>
+    </div>
+    <div class="group grid1of4 full">
+      <div class="group unit1of1 smaller-slider-1">
+        <ul class="slides product">
+            <li class="slide">
+              <a href="/home.html">
+                <img src="areaware-blocks-spin.gif">
+              </a>
+            </li>
+            <li class="slide">
+              <a href="/home.html">
+                <img src="small_cropped_8.jpg">
+              </a>
+            </li>
+            <li class="slide">
+              <a href="/home.html">
+                <img src="small_cropped_5.jpg">
+              </a>
+            </li>
+        </ul>
+      </div>
+      <div class="group unit1of1 smaller-slider-2">
+        <ul class="slides product">
+            <li class="slide">
+              <a href="/">
+                <img src="small_cropped_bag.jpg">
+              </a>
+            </li>
+            <li class="slide">
+              <a href="/">
+                <img src="small_cropped_7.jpg">
+              </a>
+            </li>
+            <li class="slide">
+              <a href="/home.html">
+                <img src="small_cropped_6.jpg">
+              </a>
+            </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+  <section class="grid-hold product-hold full">
+    <div class="group grid1of4">
+      <a href="/">
+        <div class="unit grid1of1 product">
+          <img src="small_cropped_3.jpg">
+          <div class="product-cover">
+            <h2>Tree Tops</h2>
+            <h3>$12</h3>
+          </div>
+        </div>
+      </a>
+      <a href="/">
+        <div class="unit grid1of1 product">
+          <img src="small_cropped_9.jpg">
+          <div class="product-cover">
+            <h2>Alarm Dock for iPhone 5</h2>
+            <h3>$38</h3>
+          </div>
+        </div>
+      </a>
+    </div>
+    <div class="group grid1of4">
+      <a href="/">
+        <div class="unit grid1of1 text">
+          <h2>Sale!<br>20% off<br>all Cubebots!</h2>
+          <i class="arrow-icon">right</i>
+        </div>
+      </a>
+      <a href="/">
+        <div class="unit grid1of1 product after-text">
+          <img src="small_cropped_11.jpg">
+          <div class="product-cover">
+            <h2>Multi Colored Cubebot</h2>
+            <h3>$7.50+</h3>
+          </div>
+        </div>
+      </a>
+    </div>
+    <a href="/">
+      <div class="grid grid2of4 product">
+        <img src="med_cropped_2.jpg">
+        <div class="product-cover">
+          <h2>Horseshoe Magnet</h2>
+          <h3>$14</h3>
+        </div>
+      </div>
+    </a>
+  </section>
+  <section class="grid-hold product-hold full">
+    <a href="/">
+      <div class="grid grid2of4 product">
+        <img src="med_cropped_3.jpg">
+        <div class="product-cover">
+          <h2>Cubebot Micro</h2>
+          <h3>$7.50</h3>
+        </div>
+      </div>
+    </a>
+    <div class="group grid1of4">
+      <a href="/">
+        <div class="unit grid1of1 product">
+          <img src="areaware-blocks-2.gif">
+          <div class="product-cover">
+            <h2>Balancing Blocks</h2>
+            <h3>$48</h3>
+          </div>
+        </div>
+      </a>
+      <a href="/">
+        <div class="unit grid1of1 product after-text">
+          <img src="small_cropped_10.jpg">
+          <div class="product-cover">
+            <h2>Key Target</h2>
+            <h3>$65</h3>
+          </div>
+        </div>
+      </a>
+    </div>
+    <div class="group grid1of4">
+      <a href="/">
+        <div class="unit grid1of1 text">
+          <h2>New!<br>gift cards<br>now available!</h2>
+          <i class="arrow-icon">right</i>
+        </div>
+      </a>
+      <a href="/">
+        <div class="unit grid1of1 product after-text">
+          <img src="small_cropped_3.jpg">
+          <div class="product-cover">
+            <h2>Tree Tops</h2>
+            <h3>$12</h3>
+          </div>
+        </div>
+      </a>
+    </div>
+  </section>
+  <section class="grid-hold product-hold full">
+    <div class="group grid1of4">
+      <a href="/">
+        <div class="unit grid1of1 product">
+          <img src="areaware-blocks-spin.gif">
+          <div class="product-cover">
+            <h2>Balancing Blocks</h2>
+            <h3>$48</h3>
+          </div>
+        </div>
+      </a>
+      <a href="/">
+        <div class="unit grid1of1 product">
+          <img src="small_cropped_3.jpg">
+          <div class="product-cover">
+            <h2>Tree Tops</h2>
+            <h3>$12</h3>
+          </div>
+        </div>
+      </a>
+    </div>
+    <div class="group grid1of4">
+      <a href="/">
+        <div class="unit grid1of1 product">
+          <img src="small_cropped_3.jpg">
+          <div class="product-cover">
+            <h2>Tree Tops</h2>
+            <h3>$12</h3>
+          </div>
+        </div>
+      </a>
+      <a href="/">
+        <div class="unit grid1of1 product after-text">
+          <img src="designer.jpg">
+          <div class="product-cover">
+            <h2>Discover the work of Areaware designer Fort Standard</h2>
+            <h3 class="icon">user</h3>
+          </div>
+        </div>
+      </a>
+    </div>
+    <a href="/">
+      <div class="unit grid2of4 large-text">
+        <h2>AREAWARE is a Williamsburg, Brooklyn based producer of everyday objects that are functional and unusual.</h2>
+        <i class="arrow-icon">right</i>
+      </div>
+    </a>
+  </section>
+  <footer class="grid-hold content">
+    <div class="group grid1of2">
+      <div class="unit unit1of2">
+        <ul>
+          <li><a href="#">Top 10</a></li>
+          <li><a href="#">New</a></li>
+          <li><a href="#">Kids</a></li>
+          <li><a href="#">Cubebot</a></li>
+          <li><a href="#">Desk & Office</a></li>
+          <li><a href="#">Home Accessories</a></li>
+          <li><a href="#">Electronics / Lighting</a></li>
+          <li><a href="#">Kitchen & Tabletop</a></li>
+          <li><a href="#">All Products</a></li>
+        </ul>
+      </div>
+      <div class="unit unit1of2">
+        <ul>
+          <li><a href="#">Gift Cards</a></li>
+          <li><a href="#">$25 and Under</a></li>
+          <li><a href="#">$50 and Under</a></li>
+          <li><a href="#">On Sale</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="group grid1of2">
+      <div class="unit unit1of2 mobile-hidden">
+      </div>
+      <div class="unit unit1of2">
+        <ul>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Contact</a></li>
+          <li><a href="#">Distributors</a></li>
+          <li><a href="#">Careers</a></li>
+          <li><a href="#">Wholesale</a></li>
+          <li><a href="#">FAQ</a></li>
+          <li><a href="#">Catalogs</a></li>
+          <li><a href="#">Press</a></li>
+          <li><a href="#">Login</a></li>
+          <li class="social-icon"><a href="#">twitter</a><a href="#">facebook</a><a href="#">pinterest</a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+<script>
+  jQuery(function() {
+      return $("#nav-toggle").click(function() {
+        $("ul.left").toggleClass("hidden");
+        return false;
+      });
+    });
+    jQuery(function() {
+        return $("#search-toggle").click(function() {
+          $(".search-hold").toggleClass("hidden");
+          $("#q").focus();
+          return false;
+        });
+      });
+  </script>
+  <script src="//cdn.symbolset.com/2a0d7a0070a6c4b1c565b05ccef3984be6d3971a/symbolset.js"></script>
+</body>
+
+</html>

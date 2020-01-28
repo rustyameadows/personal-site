@@ -1,0 +1,914 @@
+body {
+  margin: 0; }
+
+.grid-hold {
+  width: 100%;
+  position: relative;
+  overflow: hidden; }
+
+* {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
+
+.grid4of4 {
+  width: 100%; }
+
+.grid3of4 {
+  width: 75%; }
+
+.grid2of4 {
+  width: 50%; }
+
+.grid1of4 {
+  width: 25%; }
+
+.grid3of3 {
+  width: 100%; }
+
+.grid2of3 {
+  width: 66.6666%; }
+
+.grid1of3 {
+  width: 33.3333%; }
+
+.grid2of2 {
+  width: 100%; }
+
+.grid1of2 {
+  width: 50%; }
+
+.grid1of1 {
+  width: 100%; }
+
+.grid-hold {
+  width: 100%;
+  padding: 0;
+  margin-right: auto;
+  margin-left: auto;
+  clear: both; }
+
+.group {
+  overflow: hidden;
+  float: left;
+  padding: 0px; }
+
+.lastgroup {
+  overflow: hidden;
+  float: left;
+  float: none;
+  width: auto;
+  padding: 0px; }
+
+.lastgrid,
+.lastunit {
+  overflow: hidden;
+  float: none;
+  width: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding: 15px; }
+
+.grid,
+.unit {
+  overflow: hidden;
+  float: left;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding: 15px; }
+  .grid.full,
+  .unit.full {
+    padding: 0; }
+
+.full .grid,
+.full .unit {
+  padding: 0; }
+
+.grid,
+.lastgrid,
+.unit,
+.lastunit,
+.group,
+.lastgroup {
+  -webkit-background-clip: padding-box !important;
+  -moz-background-clip: padding-box !important;
+  background-clip: padding-box !important; }
+
+.unit1of1 {
+  width: 100%; }
+
+.unit1of2 {
+  width: 50%; }
+
+.unit2of2 {
+  width: 100%; }
+
+.unit1of3 {
+  width: 33.33333333333333%; }
+
+.unit2of3 {
+  width: 66.66666666666666%; }
+
+.unit3of3 {
+  width: 100%; }
+
+.unit1of4 {
+  width: 25%; }
+
+.unit2of4 {
+  width: 50%; }
+
+.unit3of4 {
+  width: 75%; }
+
+.unit4of4 {
+  width: 100%; }
+
+.unit1of5 {
+  width: 20%; }
+
+.unit2of5 {
+  width: 40%; }
+
+.unit3of5 {
+  width: 60%; }
+
+.unit4of5 {
+  width: 80%; }
+
+.unit5of5 {
+  width: 100%; }
+
+@media screen and (max-width: 1230px) {
+  .grid-hold.full,
+  .grid-hold.full .grid {
+    padding: 0; } }
+@media screen and (max-width: 768px) {
+  .grid1of4,
+  .unit1of4 {
+    width: 50%; }
+
+  .grid1of2 .unit1of2 {
+    width: 50%; }
+
+  .grid1of2,
+  .grid2of4,
+  .grid3of4,
+  .unit1of2,
+  .unit2of4,
+  .unit3of4 {
+    width: 100%; }
+
+  .grid1of2.grid,
+  .grid2of4.grid,
+  .grid3of4.grid,
+  .grid1of2.lastgrid,
+  .grid2of4.lastgrid,
+  .grid3of4.lastgrid {
+    float: none;
+    display: block; } }
+h1, h2, h3, h4, h5, h6, p, a {
+  margin: 0; }
+
+ul {
+  padding: 0; }
+
+li {
+  list-style: none; }
+
+a {
+  text-decoration: none; }
+
+h1 {
+  font-family: "Graphik", Helvetica, sans-serif;
+  font-size: 36px;
+  font-weight: 300;
+  color: #58595b; }
+  h1 .bold {
+    font-weight: 400; }
+
+h2 {
+  font-family: "Graphik", Helvetica, sans-serif;
+  font-size: 20px;
+  font-weight: normal;
+  color: #58595b; }
+
+h3 {
+  font-family: "Graphik", Helvetica, sans-serif;
+  font-size: 15px;
+  letter-spacing: 1.5px;
+  font-weight: 300;
+  text-transform: uppercase;
+  color: #58595b; }
+
+a {
+  padding: 4px;
+  background-color: transparent;
+  -webkit-transition: all 0.2s ease-out;
+  -moz-transition: all 0.2s ease-out;
+  -ms-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out; }
+
+a:hover {
+  background-color: #f7f2ee;
+  -webkit-transition: all 0.2s ease-out;
+  -moz-transition: all 0.2s ease-out;
+  -ms-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out; }
+
+ul {
+  padding: 0;
+  margin: 0; }
+
+img {
+  width: 100%; }
+
+.clear:after {
+  content: "";
+  display: table;
+  clear: both; }
+
+.half {
+  width: 50%; }
+
+.left {
+  float: left; }
+
+.right {
+  float: right; }
+
+.content {
+  max-width: 1440px; }
+
+.two-column {
+  -webkit-column-count: 2;
+  /* Chrome, Safari, Opera */
+  -moz-column-count: 2;
+  /* Firefox */
+  column-count: 2;
+  -webkit-column-gap: 60px;
+  /* Chrome, Safari, Opera */
+  -moz-column-gap: 60px;
+  /* Firefox */
+  column-gap: 60px; }
+  @media screen and (max-width: 768px) {
+    .two-column {
+      -webkit-column-count: 1;
+      /* Chrome, Safari, Opera */
+      -moz-column-count: 1;
+      /* Firefox */
+      column-count: 1; } }
+
+h1.tagline {
+  text-align: center;
+  width: 100%;
+  margin: 40px 0 40px 0; }
+  @media screen and (max-width: 1024px) {
+    h1.tagline {
+      font-size: 24px; } }
+  @media screen and (max-width: 480px) {
+    h1.tagline {
+      margin: 20px 0 20px 0;
+      font-size: 16px; } }
+
+h3.headline {
+  width: 100%;
+  margin: 40px 0 20px 0;
+  font-size: 19px;
+  text-align: center;
+  color: #83bbad; }
+
+nav {
+  top: 0;
+  width: 100%;
+  height: 125px;
+  background-color: white;
+  position: absolute;
+  z-index: 100; }
+  nav .mobile-menu {
+    display: none;
+    height: 125px;
+    position: absolute;
+    left: 30px;
+    top: 50px; }
+    nav .mobile-menu a, nav .mobile-menu a:hover {
+      font-family: "SSGizmo";
+      font-style: normal;
+      font-weight: normal;
+      text-decoration: none;
+      text-rendering: optimizeLegibility;
+      white-space: nowrap;
+      /*-webkit-font-feature-settings: "liga"; Currently broken in Chrome >= v22. Falls back to text-rendering. Safari is unaffected. */
+      -moz-font-feature-settings: "liga=1";
+      -moz-font-feature-settings: "liga";
+      -ms-font-feature-settings: "liga" 1;
+      -o-font-feature-settings: "liga";
+      font-feature-settings: "liga";
+      -webkit-font-smoothing: antialiased;
+      color: black;
+      background-color: transparent;
+      padding: 0; }
+  nav .nav-hold {
+    max-width: 1400px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 20; }
+    nav .nav-hold .logo {
+      position: absolute;
+      width: 150px;
+      height: auto;
+      display: block;
+      top: 0;
+      left: 50%;
+      margin-top: 55px;
+      z-index: 100;
+      -webkit-transform: translateX(-50%);
+      -moz-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+      transform: translateX(-50%); }
+      nav .nav-hold .logo a, nav .nav-hold .logo a:hover {
+        background-color: transparent;
+        padding: 0; }
+    nav .nav-hold > ul {
+      position: relative; }
+      nav .nav-hold > ul.left {
+        margin: 0 0 0 20px; }
+      nav .nav-hold > ul.right {
+        margin: 0 20px 0 0; }
+      nav .nav-hold > ul > li {
+        position: relative;
+        display: inline-block;
+        margin: 0 10px 0 10px;
+        padding: 50px 0 0 0;
+        font-family: "Graphik", Helvetica, sans-serif;
+        font-weight: normal;
+        font-size: 18px;
+        color: black;
+        border-top: solid transparent 5px; }
+        nav .nav-hold > ul > li:hover > a {
+          color: #000; }
+        nav .nav-hold > ul > li:hover > .sub-nav {
+          display: block; }
+        nav .nav-hold > ul > li > a {
+          font-family: "Graphik", Helvetica, sans-serif;
+          color: black; }
+        nav .nav-hold > ul > li.icon {
+          margin: 0 5px 0 5px;
+          font-size: 24px; }
+          nav .nav-hold > ul > li.icon > a {
+            font-family: "SSGizmo";
+            font-style: normal;
+            font-weight: normal;
+            text-decoration: none;
+            text-rendering: optimizeLegibility;
+            white-space: nowrap;
+            /*-webkit-font-feature-settings: "liga"; Currently broken in Chrome >= v22. Falls back to text-rendering. Safari is unaffected. */
+            -moz-font-feature-settings: "liga=1";
+            -moz-font-feature-settings: "liga";
+            -ms-font-feature-settings: "liga" 1;
+            -o-font-feature-settings: "liga";
+            font-feature-settings: "liga";
+            -webkit-font-smoothing: antialiased;
+            color: black; }
+            nav .nav-hold > ul > li.icon > a:hover {
+              background-color: transparent;
+              text-shadow: -2px -2px 0 #f7f2ee, 2px -2px 0 #f7f2ee, -2px 2px 0 #f7f2ee, 2px 2px 0 #f7f2ee; }
+        nav .nav-hold > ul > li.mobile-search {
+          display: none; }
+    nav .nav-hold .sub-nav {
+      display: none;
+      position: absolute;
+      width: 300px;
+      left: -30px;
+      padding: 20px 0 5px 0; }
+      nav .nav-hold .sub-nav > li {
+        text-align: left;
+        font-family: "Graphik", Helvetica, sans-serif;
+        font-weight: normal;
+        font-size: 18px;
+        color: black;
+        padding: 0 30px 10px 30px;
+        background-color: white; }
+        nav .nav-hold .sub-nav > li:last-of-type {
+          padding-bottom: 30px; }
+        nav .nav-hold .sub-nav > li:hover > a {
+          color: #000; }
+        nav .nav-hold .sub-nav > li > a {
+          text-align: left;
+          font-family: "Graphik", Helvetica, sans-serif;
+          font-weight: normal;
+          color: black; }
+  @media screen and (max-width: 1024px) {
+    nav .nav-hold > ul {
+      margin: 0; }
+      nav .nav-hold > ul > li {
+        font-size: 16px;
+        margin: 0 10px 0 10px; }
+    nav .nav-hold .sub-nav {
+      padding: 25px 0 5px 0; } }
+  @media screen and (max-width: 768px) {
+    nav .nav-hold .mobile-menu {
+      display: block;
+      z-index: 101;
+      font-size: 30px; }
+    nav .nav-hold .logo {
+      width: 100%;
+      height: 125px;
+      background-color: #fff;
+      display: block;
+      top: 0;
+      margin-top: 0;
+      z-index: 100; }
+      nav .nav-hold .logo img {
+        width: 150px;
+        height: auto;
+        display: block;
+        top: 0;
+        left: 50%;
+        margin: 55px auto 0 auto; }
+    nav .nav-hold > ul {
+      z-index: 100; }
+      nav .nav-hold > ul.left {
+        position: absolute;
+        top: 0;
+        width: 100%;
+        background-color: rgba(255, 255, 255, 0.8);
+        z-index: 99;
+        padding: 135px 0 50px 0;
+        margin: 0;
+        transition: all 0.3s ease; }
+        nav .nav-hold > ul.left.hidden {
+          top: -350px; }
+        nav .nav-hold > ul.left > li {
+          width: 100%;
+          font-size: 26px;
+          text-align: center;
+          margin: 0; }
+          nav .nav-hold > ul.left > li:hover .sub-nav {
+            display: none; }
+      nav .nav-hold > ul.right > li {
+        display: none;
+        font-size: 30px; }
+        nav .nav-hold > ul.right > li.mobile-cart {
+          display: inline-block;
+          margin: 0 15px 0 15px;
+          padding: 45px 0 0 0; }
+      nav .nav-hold > ul > li {
+        font-size: 12px;
+        margin: 0;
+        padding: 15px 0 15px 0; }
+        nav .nav-hold > ul > li.mobile-search {
+          display: inline-block; }
+    nav .nav-hold .sub-nav {
+      width: 130px;
+      left: -20px;
+      padding: 20px 0 5px 0; }
+      nav .nav-hold .sub-nav > li {
+        padding: 0 20px 15px 20px;
+        font-size: 10px; } }
+
+section:first-of-type {
+  margin-top: 125px; }
+
+.search-hold {
+  position: absolute;
+  height: 400px;
+  background-color: rgba(255, 255, 255, 0.85);
+  z-index: 99;
+  top: 0;
+  transition: all 0.3s ease; }
+  .search-hold.hidden {
+    top: -300px; }
+  .search-hold > div {
+    max-width: 1400px;
+    margin: 0 auto;
+    float: none;
+    margin-top: 125px; }
+  .search-hold input {
+    width: 100%;
+    height: 100px;
+    border: none;
+    -webkit-appearance: none;
+    -webkit-border-radius: 0; }
+    .search-hold input:focus {
+      outline: none; }
+    .search-hold input[type=text] {
+      margin-top: 30px;
+      margin-left: 30px;
+      margin-bottom: 10px;
+      padding-bottom: 10px;
+      font-family: "Graphik", Helvetica, sans-serif;
+      font-size: 60px;
+      letter-spacing: 1.25px;
+      color: black;
+      background-color: transparent;
+      border-bottom: 2px solid black; }
+    .search-hold input[type=submit] {
+      width: 100px;
+      height: 100px;
+      position: absolute;
+      right: 60px;
+      top: 165px;
+      padding: 0 0 0 0;
+      font-family: "SSGizmo";
+      font-style: normal;
+      font-weight: normal;
+      text-decoration: none;
+      text-rendering: optimizeLegibility;
+      white-space: nowrap;
+      /*-webkit-font-feature-settings: "liga"; Currently broken in Chrome >= v22. Falls back to text-rendering. Safari is unaffected. */
+      -moz-font-feature-settings: "liga=1";
+      -moz-font-feature-settings: "liga";
+      -ms-font-feature-settings: "liga" 1;
+      -o-font-feature-settings: "liga";
+      font-feature-settings: "liga";
+      -webkit-font-smoothing: antialiased;
+      font-size: 40px;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      color: black;
+      cursor: pointer;
+      background-color: transparent; }
+      .search-hold input[type=submit]:hover {
+        color: black; }
+    .search-hold input::-webkit-input-placeholder {
+      color: black; }
+    .search-hold input:-moz-placeholder {
+      color: black; }
+    .search-hold input::-moz-placeholder {
+      color: black; }
+    .search-hold input:-ms-input-placeholder {
+      color: black; }
+    .search-hold input:focus::-webkit-input-placeholder {
+      color: #D5D5D5; }
+    .search-hold input:-moz-placeholder:focus {
+      color: #D5D5D5; }
+    .search-hold input::-moz-placeholder:focus {
+      color: #D5D5D5; }
+    .search-hold input:-ms-input-placeholder:focus {
+      color: #D5D5D5; }
+  .search-hold label {
+    margin-left: 30px;
+    font-family: "Graphik", Helvetica, sans-serif;
+    font-size: 20px;
+    color: black; }
+
+.carousel {
+  height: 35.6vw; }
+  @media screen and (max-width: 768px) {
+    .carousel {
+      height: 47.5vw; } }
+  @media screen and (max-width: 480px) {
+    .carousel {
+      height: auto; } }
+  .carousel .main-slider {
+    z-index: 1; }
+  .carousel .slide {
+    z-index: 10;
+    line-height: 0; }
+    .carousel .slide a {
+      padding: 0; }
+  .carousel .main-slider-controls {
+    width: 100%;
+    position: absolute; }
+    .carousel .main-slider-controls ul {
+      width: 100%;
+      z-index: 1; }
+    .carousel .main-slider-controls li {
+      width: 50px;
+      height: 100%;
+      float: left;
+      position: relative;
+      margin-top: 22%;
+      color: #fff;
+      z-index: 15; }
+      .carousel .main-slider-controls li:last-of-type {
+        float: right;
+        text-align: right; }
+      .carousel .main-slider-controls li a {
+        font-family: "SSGizmo";
+        font-style: normal;
+        font-weight: normal;
+        text-decoration: none;
+        text-rendering: optimizeLegibility;
+        white-space: nowrap;
+        /*-webkit-font-feature-settings: "liga"; Currently broken in Chrome >= v22. Falls back to text-rendering. Safari is unaffected. */
+        -moz-font-feature-settings: "liga=1";
+        -moz-font-feature-settings: "liga";
+        -ms-font-feature-settings: "liga" 1;
+        -o-font-feature-settings: "liga";
+        font-feature-settings: "liga";
+        -webkit-font-smoothing: antialiased;
+        font-size: 36px;
+        color: #fff;
+        padding: 0 10px;
+        opacity: .5; }
+        .carousel .main-slider-controls li a:hover {
+          color: black;
+          opacity: 1;
+          background-color: transparent; }
+  .carousel .banner-caption {
+    line-height: 1.25;
+    background-color: #f7f2ee;
+    padding: 17px 17px;
+    display: none; }
+    .carousel .banner-caption h2 {
+      font-size: 26px;
+      color: black; }
+    .carousel .banner-caption h3 {
+      font-size: 18px;
+      color: black; }
+  @media screen and (max-width: 768px) {
+    .carousel .grid1of4 {
+      display: none; } }
+  @media screen and (max-width: 480px) {
+    .carousel .main-slider-controls ul li a {
+      font-size: 16px; }
+    .carousel .banner-caption {
+      display: block; } }
+
+.product-hold {
+  line-height: 0;
+  height: 35.6vw; }
+  @media screen and (max-width: 768px) {
+    .product-hold {
+      height: 71.2vw; } }
+  @media screen and (max-width: 480px) {
+    .product-hold {
+      height: auto; } }
+  .product-hold h2, .product-hold h3 {
+    line-height: 1; }
+  .product-hold > div {
+    position: relative;
+    overflow: hidden; }
+  .product-hold .text {
+    width: 100%;
+    height: 17.8571429vw;
+    padding: 20px 0 0 20px;
+    position: relative;
+    overflow: hidden;
+    background-color: #f7f2ee; }
+    .product-hold .text h2 {
+      font-size: 30px;
+      color: black;
+      line-height: 1.25; }
+    .product-hold .text .arrow-icon {
+      position: absolute;
+      bottom: 40px;
+      left: 20px;
+      font-size: 40px;
+      font-family: "SSGizmo";
+      font-style: normal;
+      font-weight: normal;
+      text-decoration: none;
+      text-rendering: optimizeLegibility;
+      white-space: nowrap;
+      /*-webkit-font-feature-settings: "liga"; Currently broken in Chrome >= v22. Falls back to text-rendering. Safari is unaffected. */
+      -moz-font-feature-settings: "liga=1";
+      -moz-font-feature-settings: "liga";
+      -ms-font-feature-settings: "liga" 1;
+      -o-font-feature-settings: "liga";
+      font-feature-settings: "liga";
+      -webkit-font-smoothing: antialiased;
+      color: black; }
+    @media screen and (max-width: 1024px) {
+      .product-hold .text h2 {
+        font-size: 20px; }
+      .product-hold .text .arrow-icon {
+        font-size: 24px;
+        bottom: 30px; } }
+    @media screen and (max-width: 768px) {
+      .product-hold .text {
+        height: 35.7142857vw; } }
+    @media screen and (max-width: 480px) {
+      .product-hold .text {
+        background-color: black; }
+        .product-hold .text h2 {
+          color: #f7f2ee; }
+        .product-hold .text .arrow-icon {
+          color: #f7f2ee; } }
+  .product-hold .large-text {
+    height: 35.7142857vw;
+    padding: 20px 60px 0 20px;
+    position: relative;
+    overflow: hidden;
+    background-color: #f7f2ee; }
+    .product-hold .large-text h2 {
+      font-size: 30px;
+      color: black;
+      line-height: 1.25; }
+    .product-hold .large-text .arrow-icon {
+      position: absolute;
+      bottom: 40px;
+      left: 20px;
+      font-size: 40px;
+      font-family: "SSGizmo";
+      font-style: normal;
+      font-weight: normal;
+      text-decoration: none;
+      text-rendering: optimizeLegibility;
+      white-space: nowrap;
+      /*-webkit-font-feature-settings: "liga"; Currently broken in Chrome >= v22. Falls back to text-rendering. Safari is unaffected. */
+      -moz-font-feature-settings: "liga=1";
+      -moz-font-feature-settings: "liga";
+      -ms-font-feature-settings: "liga" 1;
+      -o-font-feature-settings: "liga";
+      font-feature-settings: "liga";
+      -webkit-font-smoothing: antialiased;
+      color: black; }
+    @media screen and (max-width: 1024px) {
+      .product-hold .large-text h2 {
+        font-size: 20px; }
+      .product-hold .large-text .arrow-icon {
+        font-size: 24px;
+        bottom: 30px; } }
+    @media screen and (max-width: 768px) {
+      .product-hold .large-text {
+        height: 71.428571vw; } }
+    @media screen and (max-width: 480px) {
+      .product-hold .large-text {
+        background-color: black; }
+        .product-hold .large-text h2 {
+          color: #f7f2ee; }
+        .product-hold .large-text .arrow-icon {
+          color: #f7f2ee; } }
+  @media screen and (max-width: 480px) {
+    .product-hold .grid1of4 {
+      width: 100%; } }
+
+.product {
+  position: relative;
+  overflow: hidden;
+  display: block; }
+  .product:hover .product-cover {
+    position: absolute;
+    overflow: hidden;
+    display: block;
+    width: 100%;
+    height: 100%;
+    padding-top: 20px;
+    background-color: rgba(247, 242, 238, 0.8);
+    -webkit-transition: all 0.1s ease-out;
+    -moz-transition: all 0.1s ease-out;
+    -ms-transition: all 0.1s ease-out;
+    transition: all 0.1s ease-out; }
+    .product:hover .product-cover h2 {
+      max-height: 100px;
+      margin-bottom: 10px;
+      opacity: 1;
+      font-weight: normal;
+      -webkit-transform: translateX(0);
+      -moz-transform: translateX(0);
+      transform: translateX(0);
+      -webkit-transition: all 0.25s 0.05s ease-out;
+      -moz-transition: all 0.25s 0.05s ease-out;
+      -ms-transition: all 0.25s 0.05s ease-out;
+      transition: all 0.25s 0.05s ease-out; }
+    .product:hover .product-cover h3 {
+      font-weight: normal; }
+      .product:hover .product-cover h3.icon {
+        margin-top: 1000px;
+        -webkit-transition: all 0.25s 0.05s ease-out;
+        -moz-transition: all 0.25s 0.05s ease-out;
+        -ms-transition: all 0.25s 0.05s ease-out;
+        transition: all 0.25s 0.05s ease-out; }
+    @media screen and (max-width: 480px) {
+      .product:hover .product-cover {
+        position: relative;
+        zoom: 1;
+        width: 100%;
+        height: auto;
+        padding: 17px 17px;
+        background-color: #f7f2ee;
+        color: #f7f2ee;
+        text-align: left;
+        box-sizing: border-box; } }
+  @media screen and (max-width: 480px) {
+    .product {
+      width: 100%; } }
+
+.product-cover {
+  zoom: 1;
+  overflow: hidden;
+  width: 125px;
+  height: 50px;
+  padding: 17px 17px;
+  background-color: rgba(247, 242, 238, 0);
+  color: black;
+  text-align: left;
+  box-sizing: border-box;
+  position: absolute;
+  top: 0;
+  z-index: 99;
+  -webkit-transition: all 0.1s ease-out;
+  -moz-transition: all 0.1s ease-out;
+  -ms-transition: all 0.1s ease-out;
+  transition: all 0.1s ease-out; }
+  .product-cover h2 {
+    max-height: 0;
+    margin-bottom: 0;
+    font-size: 30px;
+    font-weight: normal;
+    color: black;
+    line-height: 1.25;
+    opacity: 0;
+    -webkit-transform: translateY(-10px);
+    -moz-transform: translateY(-10px);
+    transform: translateY(-10px);
+    -webkit-transition: all 0.25s ease-out;
+    -moz-transition: all 0.25s ease-out;
+    -ms-transition: all 0.25s ease-out;
+    transition: all 0.25s ease-out; }
+  .product-cover h3 {
+    font-size: 20px;
+    font-weight: normal;
+    color: black; }
+    .product-cover h3.icon {
+      font-family: "SSGizmo";
+      font-style: normal;
+      font-weight: normal;
+      text-decoration: none;
+      text-rendering: optimizeLegibility;
+      white-space: nowrap;
+      /*-webkit-font-feature-settings: "liga"; Currently broken in Chrome >= v22. Falls back to text-rendering. Safari is unaffected. */
+      -moz-font-feature-settings: "liga=1";
+      -moz-font-feature-settings: "liga";
+      -ms-font-feature-settings: "liga" 1;
+      -o-font-feature-settings: "liga";
+      font-feature-settings: "liga";
+      -webkit-font-smoothing: antialiased;
+      margin-left: 0;
+      margin-top: 0;
+      -webkit-transition: all 0.25s ease-out;
+      -moz-transition: all 0.25s ease-out;
+      -ms-transition: all 0.25s ease-out;
+      transition: all 0.25s ease-out; }
+  @media screen and (max-width: 480px) {
+    .product-cover {
+      position: relative;
+      zoom: 1;
+      width: 100%;
+      height: auto;
+      padding: 17px 17px;
+      background-color: #f7f2ee;
+      color: black;
+      text-align: left;
+      box-sizing: border-box; }
+      .product-cover h2 {
+        max-height: 100px;
+        margin-bottom: 10px;
+        opacity: 1;
+        font-size: 26px;
+        -webkit-transform: translateX(0);
+        -moz-transform: translateX(0);
+        transform: translateX(0);
+        color: black; }
+      .product-cover h3 {
+        font-size: 18px;
+        color: black; }
+        .product-cover h3.icon {
+          display: none; } }
+
+footer.content {
+  padding: 30px 0 100px; }
+  footer.content > .grid1of2 {
+    width: 50%; }
+    @media screen and (max-width: 480px) {
+      footer.content > .grid1of2 .mobile-hidden {
+        display: none; }
+      footer.content > .grid1of2 > .unit1of2 {
+        width: 100%; } }
+footer ul li {
+  margin-bottom: 10px;
+  font-family: "Graphik", Helvetica, sans-serif;
+  font-size: 20px;
+  color: black; }
+  footer ul li a {
+    color: black; }
+    footer ul li a:hover {
+      color: #000; }
+    @media screen and (max-width: 768px) {
+      footer ul li a {
+        padding: 0; } }
+  footer ul li.social-icon a {
+    margin-right: 10px;
+    font-size: 22px;
+    font-family: "SSSocial";
+    font-style: normal;
+    font-weight: normal;
+    text-decoration: none;
+    text-rendering: optimizeLegibility;
+    white-space: nowrap;
+    /*-webkit-font-feature-settings: "liga"; Currently broken in Chrome >= v22. Falls back to text-rendering. Safari is unaffected. */
+    -moz-font-feature-settings: "liga=1";
+    -moz-font-feature-settings: "liga";
+    -ms-font-feature-settings: "liga" 1;
+    -o-font-feature-settings: "liga";
+    font-feature-settings: "liga";
+    -webkit-font-smoothing: antialiased; }
+    footer ul li.social-icon a:hover {
+      color: #B1B0AD;
+      background-color: transparent; }
+    @media screen and (max-width: 768px) {
+      footer ul li.social-icon a {
+        padding: 0; } }
