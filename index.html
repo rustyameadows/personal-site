@@ -25,7 +25,7 @@
   <body>
     <main>
       <h3 class="top left">Los Angeles<br /><span id="time-h"></span><span class='time-colon'>:</span><span id="time-m"></span></h3>
-      <h3 class="top right">Sunny<br />74<span class="degrees">o</span></h3>
+      <h3 class="top right"><span class="weather">Sunny</span><br /><span class="temp">74</span><span class="degrees">o</span></h3>
       <h3 class="bottom left"><a href="https://twitter.com/rameadows">Twitter</a></h3>
       <h3 class="bottom center"><a href="mailto:hellorustymeadows@gmail.com">Email</a></h3>
       <h3 class="bottom right"><a href="https://www.linkedin.com/in/rustymeadows/">LinkedIn</a></h3>
@@ -62,6 +62,32 @@ products and delightful customer experiences.</h2>
           }, 15000);
       }
       startTime();
+
+      // function getWeather() {
+      //   //Make the API Call
+      //
+      //       $.getJSON("http://api.openweathermap.org/data/2.5/weather",
+      //       {
+      //         zip:11355,
+      //         units:"imperial"
+      //       },
+      //       function(response){  //'response' is actually a variable, we could name it what ever we want. It just stores what the api sends
+      //         console.log(response)
+      //         // $(".country").html(response.sys.country)
+      //         $(".temp").html(response.main.temp);
+      //         // $(".city-name").html(response.name);
+      //         $(".weather").html(response.weather[0].description)
+      //       });
+      // }
+      // getWeather();
+
+      const Http = new XMLHttpRequest();
+      const url='https://api.darksky.net/forecast/581d05c8e02c47b7adedbbb7964fbec1/34.1479775,-118.224655';
+      Http.open("GET", url);
+      Http.send();
+      Http.onreadystatechange=(e)=>{
+      console.log(Http.responseText)
+      }
     })();
     </script>
   </body>
