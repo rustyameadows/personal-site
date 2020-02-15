@@ -17,195 +17,52 @@
 
     <title>Rusty Meadows</title>
     <meta name="description" content="Personal site for Rusty Meadows">
+    <link rel="stylesheet" href="https://use.typekit.net/mkb6xvy.css">
 
-    <link href="https://fonts.googleapis.com/css?family=Lato:400,700&display=swap" rel="stylesheet">
-
-    <style>
-
-    /* RESET */
-    html, body, div, span, applet, object, iframe, blockquote, pre,
-    a, abbr, acronym, address, big, cite, code,
-    del, dfn, em, img, ins, kbd, q, s, samp,
-    small, strike, strong, sub, sup, tt, var,
-    b, u, i, center,
-    dl, dt, dd, ol,
-    fieldset, form, label, legend,
-    table, caption, tbody, tfoot, thead, tr, th, td,
-    article, aside, canvas, details, embed,
-    figure, figcaption, footer, header, hgroup,
-    menu, nav, output, ruby, section, summary,
-    time, mark, audio, video {
-    margin: 0;
-    padding: 0;
-    border: 0;
-    font-size: 100%;
-    font: inherit;
-    font-family: "Helvetica Neue", helvetica, "Apple Color Emoji", arial, sans-serif;
-    vertical-align: baseline;
-    }
-    /* HTML5 display-role reset for older browsers */
-    article, aside, details, figcaption, figure,
-    footer, header, hgroup, menu, nav, section {
-    display: block;
-    }
-    body {
-    line-height: 1;
-    }
-    ol, ul {
-    list-style: none;
-    }
-    blockquote, q {
-    quotes: none;
-    }
-    blockquote:before, blockquote:after,
-    q:before, q:after {
-    content: '';
-    content: none;
-    }
-    table {
-    border-collapse: collapse;
-    border-spacing: 0;
-    }
-    a {
-      text-decoration: underline;
-      color: #000;
-    }
-
-    /* STYLE */
-    body {
-      margin-bottom: 120px;
-      font-family: 'Lato', helvetica, "Apple Color Emoji", arial, sans-serif;
-    }
-
-    .content {
-      width: auto;
-      max-width: 1000px;
-      margin: 0 auto;
-    }
-
-    header {
-      text-align: center;
-    }
-
-    header .content {
-      padding: 80px 0;
-    }
-
-    header h1 {
-        margin-bottom: 40px;
-    }
-
-    header h2 {
-      line-height: 1.75;
-        margin-bottom: 40px;
-    }
-
-    header p {
-
-    }
-
-    header h3 {
-      margin-top: 60px;
-    }
-
-
-
-    @media screen and (max-width: 900px) {
-      .content {
-        padding-left: 20px;
-        padding-right: 20px;
-      }
-    }
-
-    .feature {
-      background-color: #FFE000;
-      padding: 80px 0;
-    }
-
-    .feature h2 {
-      font-size: 20px;
-      font-weight: normal;
-      line-height: 36px;
-      text-align: center;
-    }
-
-    .role {
-      margin-top: 60px;
-      margin-bottom: 60px;
-    }
-
-    .role p {
-      font-size: 16px;
-      line-height: 20px;
-    }
-
-
-    .contact {
-      background-color: #fff;
-      padding: 80px 0;
-      text-align: center;
-    }
-
-    .contact h2 {
-      font-size: 36px;
-      font-weight: normal;
-      text-align: center;
-    }
-
-    .contact p {
-      font-size: 16px;
-      line-height: 26px;
-      margin-bottom: 30px;
-    }
-
-
-
-
-
-    </style>
-
+    <link href="./assets/normalize.css" rel="stylesheet">
+    <link href="./assets/style.css" rel="stylesheet">
   </head>
   <body>
-    <header>
-      <h3 style="background-color: #91d3e9; margin: 0; padding: 15px; font-size: 13px; text-align: center;">
-        Hello! This site is currently under construction. I'm in the process of desinging and developing a new site in public so you can watch along! Enjoy!
-      </h3>
-
-      <div class="content">
-        <div>
-          <h1>Hi, my name is <span>Rusty Meadows</span>!</h1>
-          <h2>I’m a creative strategist and product manager who specializes in helping teams build exceptional products and delightful customer experiences.</h2>
-          <p>Currently living in beautiful Los Angeles</p>
-          <h3><a href="https://twitter.com/rameadows">Twitter</a> | <a href="https://www.linkedin.com/in/rustymeadows/">LinkedIn</a> | <a href="mailto:hellorustymeadows@gmail.com">Email</a></h3>
-        </div>
-      </div>
-
-    </header>
     <main>
-
-      <section class="feature">
-        <div class="content">
-          <h2>
-            Over the past 10 years, I’ve concepted, pitched, implemented, and managed many full-stack software applications and dozens of front-end experiences.<br /><br />
-            I thrive at solving people's problems using strategy and technology. I distill complaints or pain-points into actionable products/features/systems that delightfully answer those needs. I use research, data, and model thinking to ensure the path forward is the most likely to succeed. I write clearly and sketch regularly to best communicate with my clients and teams.
-          </h2>
-        </div>
-      </section>
-
-      <section class="contact">
-        <div class="content">
-          <h2>Want to Work Together?</h2>
-          <p>
-            If your brand needs help with any of the above, I’d love to chat more about how I can help.<br />
-            I am curently accepting new freelance projects + full-time opportunities.<br />
-            The best way to reach me is via email, I aim to reply very quickly!<br />
-          </p>
-          <a href="mailto:hellorustymeadows@gmail.com">Email Me</a>
-        </div>
-      </section>
+      <h3 class="top left">Los Angeles<br /><span id="time-h"></span><span class='time-colon'>:</span><span id="time-m"></span></h3>
+      <h3 class="top right">Sunny<br />74<span class="degrees">o</span></h3>
+      <h3 class="bottom left"><a href="https://twitter.com/rameadows">Twitter</a></h3>
+      <h3 class="bottom center"><a href="mailto:hellorustymeadows@gmail.com">Email</a></h3>
+      <h3 class="bottom right"><a href="https://www.linkedin.com/in/rustymeadows/">LinkedIn</a></h3>
+      <h1>Rusty</h1>
+      <h2>I’m a creative strategist and product manager who specializes in helping teams build exceptional
+products and delightful customer experiences.</h2>
+      <h1 class="lower">Meadows</h1>
     </main>
-    <footer>
-    </footer>
+    <script>
+    (function () {
+      function checkTime(i) {
+          return (i < 10) ? "0" + i : i;
+      }
 
+      function startTime() {
+          var today = new Date(),
+              h = checkTime(today.getHours()),
+              m = checkTime(today.getMinutes()),
+              s = checkTime(today.getSeconds());
+
+              //it is pm if hours from 12 onwards
+              suffix = (h >= 12)? 'pm' : 'am';
+
+              //only -12 from hours if it is greater than 12 (if not back at mid night)
+              h = (h > 12)? h -12 : h;
+
+              //if 00 then it is 12 am
+              h = (h == '00')? 12 : h;
+
+          document.getElementById('time-h').innerHTML = h;
+          document.getElementById('time-m').innerHTML = m + " " + suffix;
+          t = setTimeout(function () {
+              startTime()
+          }, 15000);
+      }
+      startTime();
+    })();
+    </script>
   </body>
 </html>
