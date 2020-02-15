@@ -1,0 +1,146 @@
+// Test
+$breakpoint-phone: 600px;
+$breakpoint-tablet: 800px;
+
+
+html {
+  background-color: #059378;
+  color: #000000;
+  font-family: henderson-sans-basic, sans-serif;
+  font-style: normal;
+  font-weight: 600;
+}
+
+body{
+  height:100vh;
+}
+
+main {
+  display: grid;
+
+  grid-template-columns: 15px 1fr 1fr 1fr 15px;
+  grid-template-rows: 15px 1fr 2fr 3fr 2fr 1fr 15px;
+
+
+  height: 100%;
+  width: 100%;
+
+  @media (min-width: $breakpoint-tablet) {
+    grid-template-columns: 40px 1fr 3fr 1fr 40px;
+    grid-template-rows: 40px 1fr 2fr 3fr 2fr 1fr 40px;
+
+  }
+
+}
+
+h1 {
+  color: #ABCEBC;
+  font-family: gopher, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: calc(50px + (150 - 50) * ((100vw - 300px) / (1600 - 300)));
+  letter-spacing: 5px;
+  text-align: center;
+  text-transform: uppercase;
+  margin: 0;
+
+  @media (min-width: $breakpoint-tablet) {
+    grid-column-start: 3;
+    grid-column-end: 4;
+    letter-spacing: 30px;
+  }
+
+  grid-column-start: 2;
+  grid-column-end: 5;
+
+  grid-row-start: 3;
+  grid-row-end: 4;
+
+  &.lower {
+    grid-row-start: 5;
+    grid-row-end: 6;
+  }
+
+  align-self: end;
+  &.lower {
+    align-self: start;
+  }
+
+
+
+
+}
+
+h2 {
+  text-align: center;
+  font-size: calc(16px + (22 - 16) * ((100vw - 300px) / (2000 - 300)));
+  line-height: 1.5;
+  margin: 0;
+
+  max-width: 20ch;
+
+  @media (min-width: $breakpoint-phone) {
+    max-width: 28ch;
+  }
+
+  @media (min-width: $breakpoint-tablet) {
+    grid-column-start: 3;
+    grid-column-end: 4;
+    max-width: 35ch;
+  }
+
+  grid-column-start: 2;
+  grid-column-end: 5;
+
+  grid-row-start: 4;
+  grid-row-end: 5;
+
+  align-self: center;
+  place-self: center;
+}
+
+h3 {
+  color: #FCB7A7;
+  font-size: calc(12px + (22 - 12) * ((100vw - 300px) / (2000 - 300)));
+  line-height: 1.3;
+  text-transform: uppercase;
+  margin: 0;
+  a {
+    color: #FCB7A7;
+    text-decoration: none;
+  }
+  .degrees {
+    vertical-align: super;
+    font-size: calc(8px + (12 - 8) * ((100vw - 300px) / (2000 - 300)));
+  }
+}
+
+.top {
+  grid-row-start: 2;
+  grid-row-end: 3;
+  align-self: start;
+}
+
+.bottom {
+  grid-row-start: 6;
+  grid-row-end: 7;
+  align-self: end;
+}
+
+.left {
+  grid-column-start: 2;
+  grid-column-end: 3;
+  text-align: left;
+}
+
+.center {
+  grid-column-start: 3;
+  grid-column-end: 4;
+  text-align: center;
+}
+
+.right {
+  grid-column-start: 4;
+  grid-column-end: 5;
+  text-align: right;
+}
