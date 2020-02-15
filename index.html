@@ -24,7 +24,7 @@
   </head>
   <body>
     <main>
-      <h3 class="top left">Los Angeles<br /><span id="time"></span></h3>
+      <h3 class="top left">Los Angeles<br /><span id="time-h"></span><span class='time-colon'>:</span><span id="time-m"></span></h3>
       <h3 class="top right">Sunny<br />74<span class="degrees">o</span></h3>
       <h3 class="bottom left"><a href="https://twitter.com/rameadows">Twitter</a></h3>
       <h3 class="bottom center"><a href="mailto:hellorustymeadows@gmail.com">Email</a></h3>
@@ -45,7 +45,18 @@ products and delightful customer experiences.</h2>
               h = checkTime(today.getHours()),
               m = checkTime(today.getMinutes()),
               s = checkTime(today.getSeconds());
-          document.getElementById('time').innerHTML = h + "<span class='time-colon'>:</span>" + m;
+
+              //it is pm if hours from 12 onwards
+              suffix = (h >= 12)? 'pm' : 'am';
+
+              //only -12 from hours if it is greater than 12 (if not back at mid night)
+              h = (h > 12)? h -12 : h;
+
+              //if 00 then it is 12 am
+              h = (h == '00')? 12 : h;
+
+          document.getElementById('time-h').innerHTML = h;
+          document.getElementById('time-m').innerHTML = m + " " + suffix;
           t = setTimeout(function () {
               startTime()
           }, 15000);
