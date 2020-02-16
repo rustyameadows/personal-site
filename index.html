@@ -67,9 +67,7 @@ products and delightful customer experiences.</h2>
   <script>
       const url='https://api.darksky.net/forecast/581d05c8e02c47b7adedbbb7964fbec1/34.1479775,-118.224655';
       fetch(url, {
-          headers: new Headers({
-            'Access-Control-Allow-Origin': '*'
-          })
+          mode: 'no-cors'
         })
         .then(
           function(response) {
