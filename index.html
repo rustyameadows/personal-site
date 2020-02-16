@@ -62,33 +62,32 @@ products and delightful customer experiences.</h2>
           }, 15000);
       }
       startTime();
-
-      // function getWeather() {
-      //   //Make the API Call
-      //
-      //       $.getJSON("http://api.openweathermap.org/data/2.5/weather",
-      //       {
-      //         zip:11355,
-      //         units:"imperial"
-      //       },
-      //       function(response){  //'response' is actually a variable, we could name it what ever we want. It just stores what the api sends
-      //         console.log(response)
-      //         // $(".country").html(response.sys.country)
-      //         $(".temp").html(response.main.temp);
-      //         // $(".city-name").html(response.name);
-      //         $(".weather").html(response.weather[0].description)
-      //       });
-      // }
-      // getWeather();
-
-      const Http = new XMLHttpRequest();
+    });
+</script>
+  <script>
       const url='https://api.darksky.net/forecast/581d05c8e02c47b7adedbbb7964fbec1/34.1479775,-118.224655';
-      Http.open("GET", url);
-      Http.send();
-      Http.onreadystatechange=(e)=>{
-      console.log(Http.responseText)
-      }
-    })();
+      fetch(url, {
+          headers: new Headers({
+            'Access-Control-Allow-Origin': '*'
+          })
+        })
+        .then(
+          function(response) {
+            if (response.status !== 200) {
+              console.log('Looks like there was a problem. Status Code: ' +
+                response.status);
+              return;
+            }
+
+            // Examine the text in the response
+            response.json().then(function(data) {
+              console.log(data);
+            });
+          }
+        )
+        .catch(function(err) {
+          console.log('Fetch Error :-S', err);
+        });
     </script>
   </body>
 </html>
