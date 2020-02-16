@@ -1,94 +1,102 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-9433878-14"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-      gtag('config', 'UA-9433878-14');
-    </script>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-9433878-14"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
 
-    <title>Rusty Meadows</title>
-    <meta name="description" content="Personal site for Rusty Meadows">
-    <link rel="stylesheet" href="https://use.typekit.net/mkb6xvy.css">
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag('js', new Date());
 
-    <link href="./assets/normalize.css" rel="stylesheet">
-    <link href="./assets/style.css" rel="stylesheet">
-  </head>
-  <body>
-    <main>
-      <h3 class="top left">Los Angeles<br /><span id="time-h"></span><span class='time-colon'>:</span><span id="time-m"></span></h3>
-      <h3 class="top right"><span class="weather">Sunny</span><br /><span class="temp">74</span><span class="degrees">o</span></h3>
-      <h3 class="bottom left"><a href="https://twitter.com/rameadows">Twitter</a></h3>
-      <h3 class="bottom center"><a href="mailto:hellorustymeadows@gmail.com">Email</a></h3>
-      <h3 class="bottom right"><a href="https://www.linkedin.com/in/rustymeadows/">LinkedIn</a></h3>
-      <h1>Rusty</h1>
-      <h2>I’m a creative strategist and product manager who specializes in helping teams build exceptional
-products and delightful customer experiences.</h2>
-      <h1 class="lower">Meadows</h1>
-    </main>
-    <script>
-    (function () {
+    gtag('config', 'UA-9433878-14');
+  </script>
+
+  <title>Rusty Meadows</title>
+  <meta name="description" content="Personal site for Rusty Meadows">
+  <link rel="stylesheet" href="https://use.typekit.net/mkb6xvy.css">
+
+  <link href="./assets/normalize.css" rel="stylesheet">
+  <link href="./assets/style.css" rel="stylesheet">
+</head>
+
+<body>
+  <main>
+    <h3 class="top left">Los Angeles<br /><span id="time-h"></span><span class='time-colon'>:</span><span id="time-m"></span></h3>
+    <h3 class="top right"><span id="weather">Sunny</span><br /><span id="temperature">74</span><span class="degrees">o</span></h3>
+    <h3 class="bottom left"><a href="https://twitter.com/rameadows">Twitter</a></h3>
+    <h3 class="bottom center"><a href="mailto:hellorustymeadows@gmail.com">Email</a></h3>
+    <h3 class="bottom right"><a href="https://www.linkedin.com/in/rustymeadows/">LinkedIn</a></h3>
+    <h1>Rusty</h1>
+    <h2>I’m a creative strategist and product manager who specializes in helping teams build exceptional
+      products and delightful customer experiences.</h2>
+    <h1 class="lower">Meadows</h1>
+  </main>
+  <script>
+    (function() {
       function checkTime(i) {
-          return (i < 10) ? "0" + i : i;
+        return (i < 10) ? "0" + i : i;
       }
 
       function startTime() {
-          var today = new Date(),
-              h = checkTime(today.getHours()),
-              m = checkTime(today.getMinutes()),
-              s = checkTime(today.getSeconds());
+        var today = new Date(),
+          h = checkTime(today.getHours()),
+          m = checkTime(today.getMinutes()),
+          s = checkTime(today.getSeconds());
 
-              //it is pm if hours from 12 onwards
-              suffix = (h >= 12)? 'pm' : 'am';
 
-              //only -12 from hours if it is greater than 12 (if not back at mid night)
-              h = (h > 12)? h -12 : h;
+        suffix = (h >= 12) ? 'pm' : 'am';
 
-              //if 00 then it is 12 am
-              h = (h == '00')? 12 : h;
 
-          document.getElementById('time-h').innerHTML = h;
-          document.getElementById('time-m').innerHTML = m + " " + suffix;
-          t = setTimeout(function () {
-              startTime()
-          }, 15000);
+        h = (h > 12) ? h - 12 : h;
+
+
+        h = (h == '00') ? 12 : h;
+
+        document.getElementById('time-h').innerHTML = h;
+        document.getElementById('time-m').innerHTML = m + " " + suffix;
+        t = setTimeout(function() {
+          startTime()
+        }, 15000);
       }
+
       startTime();
 
-      // function getWeather() {
-      //   //Make the API Call
-      //
-      //       $.getJSON("http://api.openweathermap.org/data/2.5/weather",
-      //       {
-      //         zip:11355,
-      //         units:"imperial"
-      //       },
-      //       function(response){  //'response' is actually a variable, we could name it what ever we want. It just stores what the api sends
-      //         console.log(response)
-      //         // $(".country").html(response.sys.country)
-      //         $(".temp").html(response.main.temp);
-      //         // $(".city-name").html(response.name);
-      //         $(".weather").html(response.weather[0].description)
-      //       });
-      // }
-      // getWeather();
-
-      const Http = new XMLHttpRequest();
-      const url='https://api.darksky.net/forecast/581d05c8e02c47b7adedbbb7964fbec1/34.1479775,-118.224655';
-      Http.open("GET", url);
-      Http.send();
-      Http.onreadystatechange=(e)=>{
-      console.log(Http.responseText)
-      }
     })();
-    </script>
-  </body>
+  </script>
+  <script>
+    const url = 'https://cors-anywhere.herokuapp.com/https://api.darksky.net/forecast/581d05c8e02c47b7adedbbb7964fbec1/34.1479775,-118.224655';
+    var temperature = document.getElementById('temperature');
+    var weather = document.getElementById('weather');
+
+    fetch(url)
+      .then(
+        function(response) {
+          if (response.status !== 200) {
+            console.log('Looks like there was a problem. Status Code: ' +
+              response.status);
+            return;
+          }
+
+          // Examine the text in the response
+          response.json().then(function(data) {
+            console.log(data);
+            temperature.innerHTML = Math.round(data.currently.temperature);
+            weather.innerHTML = data.currently.summary;
+          });
+        }
+      )
+      .catch(function(err) {
+        console.log('Fetch Error :-S', err);
+      });
+  </script>
+</body>
+
 </html>
