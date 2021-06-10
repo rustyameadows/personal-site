@@ -39,8 +39,7 @@
     <h3 class="bottom center"><a href="mailto:hellorustymeadows@gmail.com">Email</a></h3>
     <h3 class="bottom right"><a href="https://www.linkedin.com/in/rustymeadows/">LinkedIn</a></h3>
     <h1>Rusty</h1>
-    <h2>I’m a creative strategist and entrepreneur who specializes in helping teams build exceptional
-      products and delightful customer experiences.</h2>
+    <h2>I’m a creative strategist and entrepreneur who specializes in helping teams build exceptional products and delightful customer experiences.</h2>
     <h1 class="lower">Meadows</h1>
   </main>
   <script>
@@ -76,7 +75,10 @@
     })();
   </script>
   <script>
-    const url = 'https://cors-anywhere.herokuapp.com/https://api.darksky.net/forecast/581d05c8e02c47b7adedbbb7964fbec1/34.1479775,-118.224655';
+  
+    // https://www.weather.gov/documentation/services-web-api#
+    // https://api.weather.gov/points/34.148,-118.2247
+    const url = 'https://api.weather.gov/gridpoints/LOX/155,48/forecast/hourly';
     var temperature = document.getElementById('temperature');
     var weather = document.getElementById('weather');
 
@@ -92,8 +94,8 @@
           // Examine the text in the response
           response.json().then(function(data) {
             console.log(data);
-            temperature.innerHTML = Math.round(data.currently.temperature);
-            weather.innerHTML = data.currently.summary;
+            temperature.innerHTML = data.properties.periods[0].temperature;
+            weather.innerHTML = data.properties.periods[0].shortForecast;
           });
         }
       )
