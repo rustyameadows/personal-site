@@ -3,7 +3,6 @@ $breakpoint-phone: 600px;
 $breakpoint-tablet: 800px;
 
 html {
-  background-color: #059378;
   color: #000000;
   font-family: henderson-sans-basic, sans-serif;
   font-style: normal;
@@ -16,10 +15,11 @@ body {
 }
 
 main {
+  background-color: #059378;
   display: grid;
   grid-template-columns: 15px 1fr 1fr 1fr 15px;
   grid-template-rows: 15px 1fr 2fr 3fr 2fr 1fr 15px;
-  height: 100%;
+  height: 90%;
   width: 100%;
   @media (min-width: $breakpoint-tablet) {
     grid-template-columns: 40px 1fr 3fr 1fr 40px;
@@ -79,6 +79,23 @@ h2 {
   align-self: center;
   place-self: center;
 }
+
+section h2 {
+  font-family: gopher, sans-serif;
+  font-style: normal;
+  text-transform: uppercase;
+  font-weight: 400;
+  letter-spacing: .6px;
+}
+
+section p {
+  font-size: 20px;
+}
+
+section img {
+  width: 100%;
+}
+
 
 h3 {
   color: #FCB7A7;
