@@ -31,6 +31,7 @@ h1 {
   font-style: normal;
   font-weight: 400;
   font-size: calc(50px + (150 - 50) * ((100vw - 300px) / (1600 - 300)));
+  font-size: calc(50px + (130 - 50) * ((80vw - 300px) / (1600 - 300)));
   letter-spacing: 5px;
   text-align: center;
   text-transform: uppercase;
@@ -61,7 +62,7 @@ h2 {
   font-size: calc(16px + (22 - 16) * ((100vw - 300px) / (2000 - 300)));
   line-height: 1.5;
   margin: 0;
-  max-width: 20ch;
+  max-width: 30ch;
   grid-column-start: 2;
   grid-column-end: 5;
   grid-row-start: 4;
@@ -78,14 +79,13 @@ h2 {
   h2 {
     grid-column-start: 3;
     grid-column-end: 4;
-    max-width: 35ch;
+    max-width: 41ch;
   }
 }
 
 section h2 {
   font-family: gopher, sans-serif;
   font-style: normal;
-  text-transform: uppercase;
   font-weight: 400;
   letter-spacing: 0.6px;
 }
