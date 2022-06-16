@@ -35,7 +35,17 @@
 	</head>
 
 	<body id="viewport">
-		<main class="section">
+		<div id="top-bar">
+			<h1>Rusty Meadows</h1>
+		</div>
+		<div id="bottom-bar">
+			<ul>
+				<li><a href="https://twitter.com/rameadows">Twitter</a></li>
+				<li><a href="mailto:hellorustymeadows@gmail.com">Email</a></li>
+				<li><a href="https://www.linkedin.com/in/rustymeadows/">LinkedIn</a></li>
+			</ul>
+		</div>
+		<main id="headerSection" class="section">
 			<h3 class="top left">Los Angeles<br /><span id="time-h"></span><span class="time-colon">:</span><span id="time-m"></span></h3>
 			<h3 class="top right"><span id="weather"></span><br /><span id="temperature"></span><span class="degrees">o</span></h3>
 			<h3 class="bottom left"><a href="https://twitter.com/rameadows">Twitter</a></h3>
@@ -125,22 +135,22 @@
 			<p style="color: #fff;">tktkt</p>
 		</section>
 		<footer class="py-12 bg-gray-400" style="background-color: #059378;">
-			<div>
-				<h2>Rusty Meadows</h2>
-				<ul>
-					<li><a href="https://twitter.com/rameadows">Twitter</a></li>
-					<li><a href="mailto:hellorustymeadows@gmail.com">Email</a></li>
-					<li><a href="https://www.linkedin.com/in/rustymeadows/">LinkedIn</a></li>
-				</ul>
-			</div>
 			<div id="quote">
 				<p>
 					<a href="https://en.wikiquote.org/wiki/Edwin_H._Land">"Don't do anything that someone else can do. Don't undertake a project unless it is manifestly important and <span class="underline">nearly impossible</span>!"</a>
 				</p>
 				<p>-Edwin H. Land</p>
 			</div>
+			<div id="contact">
+				<ul>
+					<li><a href="https://twitter.com/rameadows">Twitter</a></li>
+					<li><a href="mailto:hellorustymeadows@gmail.com">Email</a></li>
+					<li><a href="https://www.linkedin.com/in/rustymeadows/">LinkedIn</a></li>
+				</ul>
+			</div>
 		</footer>
 		<script>
+
 			(function() {
 			  function checkTime(i) {
 			    return (i < 10) ? "0" + i : i;
@@ -206,6 +216,21 @@
 			let vh = window.innerHeight * 0.01;
 			// Then we set the value in the --vh custom property to the root of the document
 			document.documentElement.style.setProperty('--vh', `${vh}px`);
+
+			   document.addEventListener('scroll', function(e) {
+			        console.log(document.scrollingElement.scrollTop)
+			           let topBar = document.getElementById('top-bar');
+			           let bottomBar = document.getElementById('bottom-bar');
+
+			       if (document.scrollingElement.scrollTop > 800) {
+			           topBar.classList.add("visible")
+			            bottomBar.classList.add("visible")
+
+			       } else {
+			            topBar.classList.remove("visible")
+			             bottomBar.classList.remove("visible")
+			          }
+			     });
 		</script>
 	</body>
 </html>
