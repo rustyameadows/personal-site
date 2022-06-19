@@ -154,6 +154,7 @@ footer ul a {
 	
 	footer #quote {
 		grid-column-start: 4;
+		grid-column-end: auto;
 		grid-row-start: 1;
 	}
 }
