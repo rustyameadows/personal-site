@@ -100,8 +100,11 @@ footer {
 }
 
 footer #contact {
-	grid-row-start: 2;
+	grid-row-start: 3;
 	grid-column-start: 2;
+	align-self: end;
+	display: none;
+	text-align: center;
 }
 footer h2 {
 	text-align: center;
@@ -113,12 +116,13 @@ footer #quote {
 	grid-column-start: 1;
 	grid-column-end: 3;
 	grid-row-start: 1;
-	
-	color: #fff;
+	text-align: center;
+	color: #000;
+	min-width: 600px;
 }
 
 footer #quote a {
-	color: #fff;
+	color: #000;
 	text-decoration: none;
 	font-family: degular-display, sans-serif;
 	font-weight: 500;
@@ -136,12 +140,13 @@ footer ul a {
 @media (min-width: 600px) {
 	footer {
 		height: auto;
-		height: 30vh;
 		min-height: 30vh;
-		grid-template-columns: 12px 1fr 12px 1fr 12px;
+		grid-template-columns: 12px 1fr 1fr 1fr 12px;
 		grid-template-rows: auto;
-		padding: 30px;
+		padding: 60px 30px 30px 30px;
 		text-align: left;
+		color: #FCB7A7;
+		
 	}
 	
 	footer h2 {
@@ -150,10 +155,40 @@ footer ul a {
 	
 	footer #contact {
 		grid-row-start: 1;
+		grid-column-start: 1;
+		grid-column-end: 5;
+		display: block;
+		
+	}
+	
+	footer #contact ul {
+		display: grid;
+		grid-template-columns: auto 1fr auto auto auto;
+	}
+	
+	footer #contact ul li {
+		padding: 0 0 0 40px;	
+	}
+	
+	footer #contact li:first-of-type {
+		grid-column-start: 1;
+		padding: 0;
+	}
+	
+	footer #contact li:nth-of-type(4) {
+		grid-column-start: 5;
+	}
+	
+	footer #contact li:nth-of-type(2) {
+		grid-column-start: 3;
+	}
+	
+	footer #contact li:nth-of-type(3) {
+		grid-column-start: 4;
 	}
 	
 	footer #quote {
-		grid-column-start: 4;
+		grid-column-start: 3;
 		grid-column-end: auto;
 		grid-row-start: 1;
 	}
