@@ -42,7 +42,7 @@ h1 {
   grid-row-end: 4;
   align-self: end;
 }
-@media (min-width: 800px) {
+@media (min-width: 1000px) {
   h1 {
     grid-column-start: 3;
     grid-column-end: 4;
