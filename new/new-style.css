@@ -53,6 +53,43 @@ section h2 {
 	margin-bottom: 20px;
 }
 
+section ul {
+	display: grid;
+	grid-template-columns: repeat(3, auto) 1fr;
+	grid-template-rows: auto 8px auto 1fr;
+	
+}
+
+section ul li:after {
+	content: "|";
+	padding: 0 16px;
+	color: inherit;
+}
+
+
+
+section ul li {
+	grid-row-start: 3;
+}
+
+section ul li:nth-of-type(1) {
+	grid-row-start: 1;
+}
+
+section ul li:nth-of-type(1):after {
+	content: "";
+}
+
+
+section ul li:last-of-type:after {
+	content: "";
+}
+
+section ul li {
+	font-family: henderson-sans-basic, sans-serif;
+	font-style: normal;
+	font-weight: 600;
+}
 
 @media (min-width: 600px) {
 	section {
@@ -66,6 +103,28 @@ section h2 {
 	section p {
 		grid-column-start: 4;
 		grid-row-start: 1;
+	}
+	
+	section ul {
+		display: grid;
+		grid-template-columns: repeat(2, auto) 1fr;
+		grid-template-rows: auto
+	}
+	
+	section ul li {
+		grid-row-start: 1;
+	}
+	
+	section ul li:nth-of-type(1):after {
+		content: "|";
+	}
+	
+	section ul li:last-of-type:after {
+		content: "";
+	}
+	
+	section ul li:nth-of-type(3) {
+		grid-row-start: auto;
 	}
 }
 
@@ -121,15 +180,26 @@ footer #quote {
 	align-self: center;
 }
 
-footer #quote a {
+footer #quote p {
 	color: #000;
 	text-decoration: none;
-	font-family: degular-display, sans-serif;
+	font-family: degular, sans-serif;
 	font-weight: 500;
 	font-style: normal;
 	font-size: 20px;
 	line-height: 28px;
 	
+}
+
+footer #quote a {
+	font-family: henderson-sans-basic, sans-serif;
+	font-style: normal;
+	font-weight: 600;
+	font-size: 14px;
+	color: black;
+	text-decoration: none;
+	text-transform: uppercase;
+	letter-spacing: .8px;
 }
 
 footer ul a {
@@ -140,10 +210,10 @@ footer ul a {
 @media (min-width: 600px) {
 	footer {
 		height: auto;
-		min-height: 30vh;
+		min-height: 26vh;
 		grid-template-columns: 12px 1fr 1fr 1fr 12px;
 		grid-template-rows: auto;
-		padding: 60px 30px 30px 30px;
+		padding: 30px;
 		text-align: left;
 		color: #FCB7A7;
 		
@@ -192,6 +262,7 @@ footer ul a {
 		grid-column-end: auto;
 		grid-row-start: 1;
 		min-width: 600px;
+		padding: 30px 0 30px 0;
 	}
 }
 
