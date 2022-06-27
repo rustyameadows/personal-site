@@ -24,10 +24,18 @@ section p {
 	font-family: degular, sans-serif;
 	font-weight: 500;
 	font-style: normal;
-	font-size: 16px;
-	line-height: 22px;
-	letter-spacing: 1px;
+	font-size: 17px;
+	line-height: 24px;
+	letter-spacing: 1.1px;
 	
+}
+
+section p a {
+	text-decoration: underline;
+}
+
+section p a:hover {
+	opacity: .6;
 }
 
 ul {
@@ -89,12 +97,18 @@ section ul li {
 	font-family: henderson-sans-basic, sans-serif;
 	font-style: normal;
 	font-weight: 600;
+	
 }
+
+section ul li:hover a {
+	opacity: .6;
+}
+
 
 @media (min-width: 600px) {
 	section {
 		height: auto;
-		min-height: 30vh;
+		min-height: 33vh;
 		grid-template-columns: 12px 1fr 12px 1fr 12px;
 		grid-template-rows: auto;
 		padding-bottom: 30px;
