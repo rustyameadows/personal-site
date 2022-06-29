@@ -55,7 +55,7 @@
 			<h2>I’m a creative strategist and entrepreneur who specializes in helping teams build exceptional products and delightful customer experiences.</h2>
 			<h1 class="lower">Meadows</h1>
 		</main>
-		<section class="section" style="background-color: #183FEB;">
+		<section class="section" style="background-color: #183FEB;" data-project="reveal">
 			<div>
 				<h2 style="color: #fff;">Reveal</h2>
 				<ul class="">
@@ -63,6 +63,9 @@
 				</ul>
 			</div>
 			<p style="color: #fff;">Reveal is using futuristic technology to help creators and brands connect with their communities. Our first product is an interactive video platform for DTC makers and creators.</p>
+			<div class="cursor-hold">
+				<div class="cursor"></div>
+			</div>
 		</section>
 		<section class="section" style="background-color: #FCB7A7;">
 			<div>
@@ -82,7 +85,7 @@
 			</div>
 			<p>Down to Shop was "QVC for Gen Z" - a live shopping channel, completely reimagined for a young audience. Down to Shop created video content to introduce and sell up and coming product brands while developing in-house characters & IP. We regularly brought in thousands of viewers during livestreams, sold tens of thousands of products from various brands, and cultivated a cult following for our homegrown, on-screen characters. I was responsible for selecting, purchasing, merchandising, and marketing everything Down to Shop sold.</p>
 		</section>
-		<section class="" style="background-color: #A4D0D3;">
+		<section class="section" style="background-color: #A4D0D3;">
 			<div>
 				<h2>Nearly Impossible</h2>
 				<ul>
@@ -161,6 +164,7 @@
 				</ul>
 			</div>
 		</footer>
+
 		<script>
 
 			(function() {
@@ -243,6 +247,13 @@
 			             bottomBar.classList.remove("visible")
 			          }
 			     });
+		</script>
+		<script>
+			document.onmousemove = function(e) {
+			  document.body.style.setProperty('--x',(e.clientX)+'px');
+			  document.body.style.setProperty('--y',(e.clientY)+'px');
+
+			}
 		</script>
 	</body>
 </html>

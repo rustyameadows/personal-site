@@ -350,3 +350,63 @@ footer ul a {
 	}
 }
 
+/* html {
+	cursor: none;
+}
+
+a {
+	cursor: none;
+} */
+
+.section {
+	position: relative;
+}
+
+.cursor-hold {
+	top: 0;
+	position: fixed;
+	width: clamp(1.2rem,3vw,3rem);
+	height: clamp(1.2rem,3vw,3rem);
+	pointer-events: none;
+	will-change: transform;
+	mix-blend-mode: difference;
+	transition: .15s height,.15s width,.15s opacity;
+	transform: translate3d(var(--x), var(--y), 0);
+}
+
+[data-project="reveal"]:hover .cursor-hold .cursor {
+	transform: translate(-50%,-50%);
+	background: #fff;
+	height: inherit;
+	width: inherit;
+	border-radius: 50%;
+}
+
+[data-project="reveal"],
+[data-project="reveal"] a {
+	cursor: none;
+}
+
+[data-project="reveal"] {
+	overflow: hidden;
+}
+
+/* [data-project="reveal"]:before {
+  content:"";
+  position:absolute;
+  z-index:999;
+  top:var(--y);
+  left:var(--x);
+  right:0;
+  bottom:0; 
+  width:1.5em;
+  height:1.5em;
+  border-radius:50%;
+  transform:translate(-50%,-50%);
+  background:#fff;
+  mix-blend-mode:difference;
+  cursor: none;
+} */
+
+
+
