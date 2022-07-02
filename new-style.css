@@ -143,6 +143,16 @@ section ul li:hover a {
 	}
 }
 
+main {
+	height: 90.5vh;
+}
+
+@media (min-width: 600px) {
+	main {
+		height: 90vh;
+	}
+}
+
 main h2 {
 	font-family: degular, sans-serif;
 	font-weight: 500;
