@@ -76,7 +76,7 @@
 			</div>
 			<p>Paloma is a collaborative studio creating physical and digital products for growing brands. We work across various media to create fun and memorable experiences.</p>
 		</section>
-		<section class="section" style="background-color: #F7DC3E;">
+		<section class="section" style="background-color: #F7DC3E;" data-project="dts">
 			<div>
 				<h2>Down to Shop</h2>
 				<ul>
@@ -84,6 +84,38 @@
 				</ul>
 			</div>
 			<p>Down to Shop was "QVC for Gen Z" - a live shopping channel, completely reimagined for a young audience. Down to Shop created video content to introduce and sell up and coming product brands while developing in-house characters & IP. We regularly brought in thousands of viewers during livestreams, sold tens of thousands of products from various brands, and cultivated a cult following for our homegrown, on-screen characters. I was responsible for selecting, purchasing, merchandising, and marketing everything Down to Shop sold.</p>
+			<div class="coin-grid">
+				<div class="coin" data-coin-index="0">
+					<a href="#" onclick="hideCoin(0)">
+						<img src="/assets/portfolio/dts-clout-coin-gif.gif" />
+					</a>
+				</div>
+				<div class="coin" data-coin-index="1">
+					<a href="#" onclick="hideCoin(1)">
+						<img src="/assets/portfolio/dts-clout-coin-gif.gif" />
+					</a>
+				</div>
+				<div class="coin" data-coin-index="2">
+					<a href="#" onclick="hideCoin(2)">
+						<img src="/assets/portfolio/dts-clout-coin-gif.gif" />
+					</a>
+				</div>
+				<div class="coin" data-coin-index="3">
+					<a href="#" onclick="hideCoin(3)">
+						<img src="/assets/portfolio/dts-clout-coin-gif.gif" />
+					</a>
+				</div>
+				<div class="coin" data-coin-index="4">
+					<a href="#" onclick="hideCoin(4)">
+						<img src="/assets/portfolio/dts-clout-coin-gif.gif" />
+					</a>
+				</div>
+				<div class="coin" data-coin-index="5">
+					<a href="#" onclick="hideCoin(5)">
+						<img src="/assets/portfolio/dts-clout-coin-gif.gif" />
+					</a>
+				</div>
+			</div>
 		</section>
 		<section class="section" style="background-color: #A4D0D3;">
 			<div>
@@ -252,8 +284,19 @@
 			document.onmousemove = function(e) {
 			  document.body.style.setProperty('--x',(e.clientX)+'px');
 			  document.body.style.setProperty('--y',(e.clientY)+'px');
-
 			}
+
+			   function hideCoin(coinIndex) {
+					  event.preventDefault();
+						document.getElementById('weather');
+						const dataQuery = `[data-coin-index="` + coinIndex + `"]`
+						
+						const coin = document.querySelectorAll(dataQuery)[0]
+						
+						coin.classList.add("collected")
+						
+			      console.log(coin)
+			    }
 		</script>
 	</body>
 </html>

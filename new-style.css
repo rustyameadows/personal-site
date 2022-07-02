@@ -408,5 +408,61 @@ a {
   cursor: none;
 } */
 
+[data-project="dts"] div,
+[data-project="dts"] p {
+	z-index: 100;
+}
 
+[data-project="dts"] .coin-grid {
+	position: absolute;
+	top: 0;
+	left: -42px;
+	width: 100vw;
+	height: 100%;
+	display: grid;
+	grid-template-columns: repeat(20, 1fr);
+	grid-template-rows: repeat(10,1fr);
+	z-index: 200;
+	pointer-events:none;
+	padding: 12px;
+}
 
+.coin-grid .coin {
+	width: 50px;
+	height: 50px;
+	z-index: 200;
+	pointer-events: auto;
+	
+	grid-row-start: 2;
+	grid-column-start: 9;
+	
+}
+
+.coin-grid .coin.collected {
+	display: none;
+}
+
+.coin-grid .coin:nth-of-type(2) {
+	grid-row-start: 1;
+	grid-column-start: 3;
+}
+
+.coin-grid .coin:nth-of-type(3) {
+	grid-row-start: 8;
+	grid-column-start: 5;
+}
+
+.coin-grid .coin:nth-of-type(4) {
+	grid-row-start: 1;
+	grid-column-start: 18;
+}
+
+.coin-grid .coin:nth-of-type(5) {
+	grid-row-start: 6;
+	grid-column-start: 2;
+}
+
+.coin-grid .coin:nth-of-type(6) {
+	grid-row-start: 8;
+	grid-column-start: 14;
+}
