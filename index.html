@@ -84,6 +84,12 @@
 				</ul>
 			</div>
 			<p>Down to Shop was "QVC for Gen Z" - a live shopping channel, completely reimagined for a young audience. Down to Shop created video content to introduce and sell up and coming product brands while developing in-house characters & IP. We regularly brought in thousands of viewers during livestreams, sold tens of thousands of products from various brands, and cultivated a cult following for our homegrown, on-screen characters. I was responsible for selecting, purchasing, merchandising, and marketing everything Down to Shop sold.</p>
+			
+			<div class="dts-profile-badge">
+				<img src="/assets/portfolio/dts-clout-coin-gif.gif" />
+				<span id="coin-count">8736452</span>
+			</div>
+			
 			<div class="coin-grid">
 				<div class="coin" data-coin-index="0">
 					<a href="#" onclick="hideCoin(0)">
@@ -288,14 +294,23 @@
 
 			   function hideCoin(coinIndex) {
 					  event.preventDefault();
-						document.getElementById('weather');
+						
 						const dataQuery = `[data-coin-index="` + coinIndex + `"]`
 						
 						const coin = document.querySelectorAll(dataQuery)[0]
 						
 						coin.classList.add("collected")
+						const coinCountElement = document.getElementById('coin-count');
 						
-			      console.log(coin)
+						cointCount = coinCountElement.innerText;
+						
+						cointCount = parseInt(cointCount) ;
+						
+						cointCount++;
+						
+						coinCountElement.innerText = cointCount;
+						
+			      console.log(cointCount)
 			    }
 		</script>
 	</body>
