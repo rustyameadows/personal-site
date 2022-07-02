@@ -421,7 +421,7 @@ a {
 	height: 100%;
 	display: grid;
 	grid-template-columns: repeat(20, 5vw);
-	grid-template-rows: repeat(10, 3.8vh);
+	grid-template-rows: repeat(10, 8vh);
 	z-index: 200;
 	pointer-events:none;
 	padding: 12px;
@@ -429,7 +429,7 @@ a {
 
 .dts-profile-badge {
 	position: absolute;
-	bottom: 60px;
+	bottom: 70px;
 }
 
 .dts-profile-badge img {
@@ -469,8 +469,8 @@ a {
 	z-index: 200;
 	pointer-events: auto;
 	
-	grid-row-start: 2;
-	grid-column-start: 9;
+	grid-row-start: 9;
+	grid-column-start: 10;
 	
 }
 
@@ -479,13 +479,13 @@ a {
 }
 
 .coin-grid .coin:nth-of-type(2) {
-	grid-row-start: 1;
-	grid-column-start: 3;
+	grid-row-start: 5;
+	grid-column-start: 2;
 }
 
 .coin-grid .coin:nth-of-type(3) {
-	grid-row-start: 8;
-	grid-column-start: 5;
+	grid-row-start: 2;
+	grid-column-start: 12;
 }
 
 .coin-grid .coin:nth-of-type(4) {
@@ -494,11 +494,49 @@ a {
 }
 
 .coin-grid .coin:nth-of-type(5) {
-	grid-row-start: 6;
-	grid-column-start: 2;
+	grid-row-start: 7;
+	grid-column-start: 16;
 }
 
 .coin-grid .coin:nth-of-type(6) {
-	grid-row-start: 8;
+	grid-row-start: 4;
 	grid-column-start: 14;
 }
+
+@media (min-width: 600px) {
+	[data-project="dts"] .coin-grid {
+			grid-template-rows: repeat(10, 3.8vh);
+	}
+	
+	.coin-grid .coin {
+		grid-row-start: 2;
+		grid-column-start: 9;
+		
+	}
+	.coin-grid .coin:nth-of-type(2) {
+		grid-row-start: 1;
+		grid-column-start: 3;
+	}
+	
+	.coin-grid .coin:nth-of-type(3) {
+		grid-row-start: 8;
+		grid-column-start: 5;
+	}
+	
+	.coin-grid .coin:nth-of-type(4) {
+		grid-row-start: 1;
+		grid-column-start: 18;
+	}
+	
+	.coin-grid .coin:nth-of-type(5) {
+		grid-row-start: 6;
+		grid-column-start: 2;
+	}
+	
+	.coin-grid .coin:nth-of-type(6) {
+		grid-row-start: 8;
+		grid-column-start: 14;
+	}
+}
+
+
