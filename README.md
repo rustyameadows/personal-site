@@ -7,3 +7,5 @@ Codebase for my personal website.
 ## Todo
 
 - serve high-res coin on desktop
+- clean up CSS, remove older sheets
+- improve contrast on header text
