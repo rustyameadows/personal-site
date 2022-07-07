@@ -9,3 +9,4 @@ Codebase for my personal website.
 - serve high-res coin on desktop
 - clean up CSS, remove older sheets
 - improve contrast on header text
+- Remove Typekit
