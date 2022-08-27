@@ -83,7 +83,7 @@
 			<div>
 				<h2>Paloma</h2>
 				<ul>
-					<li>coming soon</li>
+					<li><a href="https://studio-paloma.com" target="_blank">studio-paloma.com</a></li>
 				</ul>
 			</div>
 			<p>Paloma is a collaborative studio creating physical and digital products for growing brands. We work across various media to create fun and memorable experiences.</p>
@@ -103,33 +103,33 @@
 			</div>
 			
 			<div class="coin-grid">
-				<div class="coin" data-coin-index="0">
-					<a href="#" onclick="hideCoin(0)">
+				<div class="coin">
+					<a href="" id="coinOne">
 						<img src="/assets/dts-coin-small.gif" width="50" height="50" alt="roatating gold coin" />
 					</a>
 				</div>
 				<div class="coin" data-coin-index="1">
-					<a href="#" onclick="hideCoin(1)">
+					<a href="" onclick="hideCoin(1);">
 						<img src="/assets/dts-coin-small.gif" width="50" height="50" alt="roatating gold coin" />
 					</a>
 				</div>
 				<div class="coin" data-coin-index="2">
-					<a href="#" onclick="hideCoin(2)">
+					<a href="" onclick="hideCoin(2);">
 						<img src="/assets/dts-coin-small.gif" width="50" height="50" alt="roatating gold coin" />
 					</a>
 				</div>
 				<div class="coin" data-coin-index="3">
-					<a href="#" onclick="hideCoin(3)">
+					<a href="" onclick="hideCoin(3);">
 						<img src="/assets/dts-coin-small.gif" width="50" height="50" alt="roatating gold coin" />
 					</a>
 				</div>
 				<div class="coin" data-coin-index="4">
-					<a href="#" onclick="hideCoin(4)">
+					<a href="" onclick="hideCoin(4);">
 						<img src="/assets/dts-coin-small.gif" width="50" height="50" alt="roatating gold coin" />
 					</a>
 				</div>
 				<div class="coin" data-coin-index="5">
-					<a href="#" onclick="hideCoin(5)">
+					<a href="" onclick="hideCoin(5);">
 						<img src="/assets/dts-coin-small.gif" width="50" height="50" alt="roatating gold coin" />
 					</a>
 				</div>
@@ -284,7 +284,7 @@
 			document.documentElement.style.setProperty('--vh', `${vh}px`);
 
 			   document.addEventListener('scroll', function(e) {
-			        console.log(document.scrollingElement.scrollTop)
+			        // console.log(document.scrollingElement.scrollTop)
 			           let topBar = document.getElementById('top-bar');
 			           let bottomBar = document.getElementById('bottom-bar');
 
@@ -324,6 +324,12 @@
 						
 			      console.log(cointCount)
 			    }
+				
+			var div = document.getElementById('coinOne');
+			div.addEventListener('click', function(e){
+				e.preventDefault();
+			  console.log(this.getAttribute('id'))
+			});
 		</script>
 	</body>
 </html>
